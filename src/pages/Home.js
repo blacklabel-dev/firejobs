@@ -11,7 +11,7 @@ export default function Home() {
     const getCategories = () => {
         const options = {
             headers: {
-                "Authorization": `Basic ${btoa(`${process.env.REACT_APP_HARVEST_API}:`)}`,
+                "Authorization": `Basic ${process.env.REACT_APP_HARVEST_ENCODED_API_TOKEN}`,
                 'Access-Control-Allow-Origin': "*"
             }
         }
