@@ -11,19 +11,17 @@ export default function Home() {
     const getCategories = () => {
         const options = {
             headers: {
-                "Accept": "*/*",
-                "Authorization": `Basic ${process.env.REACT_APP_HARVEST_ENCODED_API_TOKEN}`,
-                "Content-Type": "application/json",
-                'Access-Control-Allow-Origin': "*",
+                "Authorization": `Basic ${btoa(`${process.env.REACT_APP_HARVEST_API}:`)}`,
+                'Access-Control-Allow-Origin': "*"
             }
         }
 
-        axios.post(`${process.env.REACT_APP_HARVEST_GREENHOUSE_API}/departments`, options)
+        axios.get(`${process.env.REACT_APP_HARVEST_GREENHOUSE_API}/departments`, options)
          .then((res) => {
-            console.log(res);
-            setCategories(res);
+            console.log(res)
+            setCategories(res)
          }, (err) => {
-            console.log(err);
+            console.log(err)
          })
     }
 
@@ -112,7 +110,7 @@ export default function Home() {
                             <div className="col-md-6">
                                 <h2>Who we are</h2>
                                 <p>TBNR is a top YouTube Production Company that manages the massive YouTube channels and digital media
-                                brands of Preston and Brianna Arsement.</p>
+                                    brands of Preston and Brianna Arsement.</p>
                             </div>
                         </div>
                     </div>
@@ -158,9 +156,9 @@ export default function Home() {
                                 <button className="btn Properties" onClick="filterSelection('Properties')"> Properties <span>6</span></button>
                                 <button className="btn Fire" onClick="filterSelection('Fire')"> Fire Games <span>6</span></button>
                                 <button className="btn Resources" onClick="filterSelection('Resources')"> Human Resources
-                                <span>6</span></button>
+                                    <span>6</span></button>
                                 <button className="btn Information" onClick="filterSelection('Information')"> Information Technology
-                                <span>6</span></button>
+                                    <span>6</span></button>
                                 <button className="btn Operations" onClick="filterSelection('Operations')"> Operations <span>6</span></button>
                                 <button className="btn Sales" onClick="filterSelection('Sales')"> Sales/Marketing <span>6</span></button>
                                 <button className="btn active" onClick="filterSelection('all')"> Show all <span>6</span></button>
@@ -343,7 +341,7 @@ export default function Home() {
                             <div className="col-lg-3">
                                 <h2>Trailblazers</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra viverra at in enim risus pharetra praesent.
-                                Scelerisque facilisis aliquam amet eu sed. Non id sit turpis massa convallis odio. </p>
+                                    Scelerisque facilisis aliquam amet eu sed. Non id sit turpis massa convallis odio. </p>
                             </div>
                             <div className="col-lg-9">
                                 <div className="owl-carousel">
@@ -354,8 +352,8 @@ export default function Home() {
                                                 <h3>JON AYSON</h3>
                                                 <h4><span>3</span> Year</h4>
                                                 <ul>
-                                                <li>Super power: <label>Controlling Elements</label></li>
-                                                <li>Trophy: <label>Over Achiever</label></li>
+                                                    <li>Super power: <label>Controlling Elements</label></li>
+                                                    <li>Trophy: <label>Over Achiever</label></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -367,8 +365,8 @@ export default function Home() {
                                                 <h3>JON AYSON</h3>
                                                 <h4><span>3</span> Year</h4>
                                                 <ul>
-                                                <li>Super power: <label>Controlling Elements</label></li>
-                                                <li>Trophy: <label>Over Achiever</label></li>
+                                                    <li>Super power: <label>Controlling Elements</label></li>
+                                                    <li>Trophy: <label>Over Achiever</label></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -380,8 +378,8 @@ export default function Home() {
                                                 <h3>JON AYSON</h3>
                                                 <h4><span>3</span> Year</h4>
                                                 <ul>
-                                                <li>Super power: <label>Controlling Elements</label></li>
-                                                <li>Trophy: <label>Over Achiever</label></li>
+                                                    <li>Super power: <label>Controlling Elements</label></li>
+                                                    <li>Trophy: <label>Over Achiever</label></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -393,8 +391,8 @@ export default function Home() {
                                                 <h3>JON AYSON</h3>
                                                 <h4><span>3</span> Year</h4>
                                                 <ul>
-                                                <li>Super power: <label>Controlling Elements</label></li>
-                                                <li>Trophy: <label>Over Achiever</label></li>
+                                                    <li>Super power: <label>Controlling Elements</label></li>
+                                                    <li>Trophy: <label>Over Achiever</label></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -444,7 +442,7 @@ export default function Home() {
                                         <span><img src="images/Perks5.png" />
                                         </span>
                                         <h4>Company paid
-                                        holidays </h4>
+                                            holidays </h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-3  d-flex align-items-stretch">
@@ -452,7 +450,7 @@ export default function Home() {
                                         <span><img src="images/Perks6.png" />
                                         </span>
                                         <h4>Paid Parental
-                                        Leave </h4>
+                                            Leave </h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-3  d-flex align-items-stretch">
