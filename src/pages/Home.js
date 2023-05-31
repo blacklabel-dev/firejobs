@@ -66,7 +66,6 @@ export default function Home() {
                                                 <li>Type4</li>
                                             </ul>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div className="col-md-4">
