@@ -1,32 +1,117 @@
 import React, { useEffect, useState } from "react"
 import Header from "../components/layouts/Header"
 import JobCard from "../components/home/JobCard"
-import CategoryBtn from "../components/home/CategoryBtn"
-import axios from 'axios'
+import { callGetApi } from "../utils/api/api"
 
 export default function Home() {
-    const [categories, setCategories] = useState([])
+    const [departments, setDepartments] = useState([])
+    const [offices, setOffices] = useState([])
+    const [types, setTypes] = useState([])
     const [jobs, setJobs] = useState([])
-
-    const getCategories = () => {
-        const options = {
-            headers: {
-                "Authorization": `Basic ${process.env.REACT_APP_HARVEST_ENCODED_API_TOKEN}`,
-                'Access-Control-Allow-Origin': "*"
-            }
+    const [countedDepartments, setCountedDepartments] = useState([])
+    const [formData, setFormData] = useState({
+        status: {
+            id: "",
+            name: "All Roles"
+        },
+        department: {
+            id: "",
+            name: ""
+        },
+        custom_field_option: {
+            id: "",
+            name: "Type"
+        },
+        office: {
+            id: "",
+            name: "Location"
         }
+    })
 
-        axios.get(`${process.env.REACT_APP_HARVEST_GREENHOUSE_API}/departments`, options)
-         .then((res) => {
-            console.log(res)
-            setCategories(res)
-         }, (err) => {
-            console.log(err)
-         })
+    const onGetOffices = (res) => {
+        setOffices(res)
+    }
+
+    const onFailedGetOffices = (res) => {
+        console.log(res)
+    }
+
+    const getOffices = () => {
+        callGetApi("offices", onGetOffices, onFailedGetOffices)
+    }
+
+    const onGetDepartments = (res) => {
+        setDepartments(res)
+    }
+
+    const onFailedGetDepartments = (res) => {
+        console.log(res)
+    }
+
+    const getDepartments = () => {
+        callGetApi("departments", onGetDepartments, onFailedGetDepartments)
+    }
+
+    const onGetTypes = (res) => {
+        if (res && res.length > 0 && res[0].custom_field_options && res[0].custom_field_options.length > 0) {
+            setTypes(res[0].custom_field_options)
+        } else {
+            setTypes([])
+        }
+    }
+
+    const onFailedGetTypes = (res) => {
+        console.log(res)
+    }
+
+    const getTypes = () => {
+        callGetApi("types", onGetTypes, onFailedGetTypes)
+    }
+
+    const onGetJobs = (res) => {
+        setJobs(res)
+    }
+
+    const onFailedGetJobs = (res) => {
+
+    }
+
+    const getJobs = (status, department_id, custom_field_option_id, office_id) => {
+        const query = `status=${status}&department_id=${department_id}&custom_field_option_id=${custom_field_option_id}&office_id=${office_id}`
+        callGetApi(`jobs?${query}`, onGetJobs, onFailedGetJobs)
+    }
+
+    const onClickSearchJobs = () => {
+        getJobs(formData.status.id, formData.department.id, formData.custom_field_option.id, formData.office.id)
     }
 
     useEffect(() => {
-        getCategories()
+        if (departments.length > 0 && jobs.length > 0) {
+            const countedDepartments0 = [
+                ...departments.map((el) => ({
+                    ...el,
+                    job_count: jobs.filter((el2) => el.id == el2.departments[0].id).length,
+                    jobs: [
+                        ...jobs.filter((el2) => el.id == el2.departments[0].id)
+                    ]
+                })),
+                {
+                    id: "",
+                    name: "Show all",
+                    job_count: jobs.length,
+                    jobs: jobs
+                }
+            ];
+    
+            setCountedDepartments(countedDepartments0)
+        }
+    }, [departments, jobs])
+
+    useEffect(() => {
+        getDepartments()
+        getTypes()
+        getOffices()
+        getJobs(formData.status.id, formData.department.id, formData.custom_field_option.id, formData.office.id)
     }, [])
 
     return (
@@ -41,13 +126,35 @@ export default function Home() {
                                 <div className="col-md-4">
                                     <div className="FireJob_select">
                                         <div className="dropdown">
-                                            <span className="select-label">All Roles</span>
+                                            <span className="select-label">{formData.status.name}</span>
                                             <input type="hidden" name="cd-dropdown" />
                                             <ul className="dropdown-list">
-                                                <li>All Roles1</li>
-                                                <li>All Roles2</li>
-                                                <li>All Roles3</li>
-                                                <li>All Roles4</li>
+                                                <li
+                                                    key="1"
+                                                    value=""
+                                                    onClick={() => 
+                                                        setFormData({
+                                                            ...formData,
+                                                            status: {
+                                                                id: "", 
+                                                                name: "All Roles"
+                                                            }
+                                                        })
+                                                    }
+                                                >All Roles</li>
+                                                <li
+                                                    key="2"
+                                                    value="open"
+                                                    onClick={() => 
+                                                        setFormData({
+                                                            ...formData,
+                                                            status: {
+                                                                id: "open", 
+                                                                name: "All Open Jobs"
+                                                            }
+                                                        })
+                                                    }
+                                                >All Open Jobs</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -55,13 +162,26 @@ export default function Home() {
                                 <div className="col-md-4">
                                     <div className="FireJob_select2">
                                         <div className="dropdown2">
-                                            <span className="select-label2">Type</span>
+                                            <span className="select-label2">{formData.custom_field_option.name}</span>
                                             <input type="hidden" name="cd-dropdown" />
                                             <ul className="dropdown-list2">
-                                                <li>Type1</li>
-                                                <li>Type2</li>
-                                                <li>Type3</li>
-                                                <li>Type4</li>
+                                                {types && types.length > 0 &&
+                                                    types.map((el) => (
+                                                        <li
+                                                            key={el.id}
+                                                            value={el.id}
+                                                            onClick={() => 
+                                                                setFormData({
+                                                                    ...formData,
+                                                                    custom_field_option: {
+                                                                        id: el.id, 
+                                                                        name: el.name
+                                                                    }
+                                                                })
+                                                            }
+                                                        >{el.name}</li>
+                                                    ))
+                                                }
                                             </ul>
                                         </div>
                                     </div>
@@ -69,20 +189,33 @@ export default function Home() {
                                 <div className="col-md-4">
                                     <div className="FireJob_select3">
                                         <div className="dropdown3">
-                                            <span className="select-label3">Location</span>
+                                            <span className="select-label3">{formData.office.name}</span>
                                             <input type="hidden" name="cd-dropdown" />
                                             <ul className="dropdown-list3">
-                                                <li>Location1</li>
-                                                <li>Location2</li>
-                                                <li>Location3</li>
-                                                <li>Location4</li>
+                                                {offices && offices.length > 0 &&
+                                                    offices.map((el) => (
+                                                        <li
+                                                            key={el.id}
+                                                            value={el.id}
+                                                            onClick={() => 
+                                                                setFormData({
+                                                                    ...formData,
+                                                                    office: {
+                                                                        id: el.id, 
+                                                                        name: el.name
+                                                                    }
+                                                                })
+                                                            }
+                                                        >{el.name}</li>
+                                                    ))
+                                                }
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="FireJob_search">
-                                        <button>SEARCH JOBS</button>
+                                        <button onClick={onClickSearchJobs}>SEARCH JOBS</button>
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
@@ -147,188 +280,29 @@ export default function Home() {
                         <div className="FireJob_Open">
                             <h2>Open Positions</h2>
                             <div className="FireJob_Positions_button" id="myBtnContainer">
-                                <CategoryBtn />
-                                <button className="btn Gaming" onClick="filterSelection('Gaming')"> Gaming <span>6</span></button>
-                                <button className="btn Post" onClick="filterSelection('Post')"> Post-Production <span>6</span></button>
-                                <button className="btn Production" onClick="filterSelection('Production')"> Production <span>6</span></button>
-                                <button className="btn Department " onClick="filterSelection('Department')"> Art Department <span>6</span></button>
-                                <button className="btn Keeley" onClick="filterSelection('Keeley')"> Keeley Channel <span>6</span></button>
-                                <button className="btn Properties" onClick="filterSelection('Properties')"> Properties <span>6</span></button>
-                                <button className="btn Fire" onClick="filterSelection('Fire')"> Fire Games <span>6</span></button>
-                                <button className="btn Resources" onClick="filterSelection('Resources')"> Human Resources
-                                    <span>6</span></button>
-                                <button className="btn Information" onClick="filterSelection('Information')"> Information Technology
-                                    <span>6</span></button>
-                                <button className="btn Operations" onClick="filterSelection('Operations')"> Operations <span>6</span></button>
-                                <button className="btn Sales" onClick="filterSelection('Sales')"> Sales/Marketing <span>6</span></button>
-                                <button className="btn active" onClick="filterSelection('all')"> Show all <span>6</span></button>
+                                {countedDepartments && countedDepartments.length > 0 &&
+                                    countedDepartments.map((el) => (
+                                        <button key={el.id} className="btn Gaming" 
+                                            onClick={() => 
+                                                setFormData({
+                                                    ...formData,
+                                                    department: {
+                                                        id: el.id,
+                                                        name: el.name
+                                                    }
+                                                })
+                                            }
+                                        > {el.name} <span>{el.job_count}</span></button>
+                                    ))
+                                }
                             </div>
                             <div className="FireJob_Portfolio">
                                 <div className="row">
-                                    <div className="col-lg-4  col-sm-6 col-xs-6 column Creative">
-                                        <JobCard />
-                                    </div>
-                                    <div className="col-lg-4 col-sm-6 col-xs-6 column Gaming">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group2.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Full Stack Software
-                                                        Engineer</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
+                                    {countedDepartments && countedDepartments.length > 0 && countedDepartments.filter((el) => el.id == formData.department.id).length > 0 && countedDepartments.filter((el) => el.id == formData.department.id)[0].jobs.map((el) => (
+                                        <div key={el.id} className="col-lg-4  col-sm-6 col-xs-6 Creative">
+                                            <JobCard job={el} />
                                         </div>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-6 col-xs-6 column Post ">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group3.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Director of Production, Gaming Content</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-6 col-xs-6 column Production">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group2.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Game Developer (Type Script)</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-6 col-xs-6 column Department">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group4.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Director of Social Strategy (YouTube Shorts / TikTok)</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4  col-sm-6 col-xs-6 column Keeley">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Gaming Creative Strategist - Roblox</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-sm-6 col-xs-6 column Properties">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>Gaming Creative Strategist - Minecraft</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-sm-6 col-xs-6 column Resources">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group5.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>YouTube Thumbnail Artist</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-sm-6 col-xs-6 column Information">
-                                        <div className="FireJob_glightbox">
-                                            <div className="FireJob_glightbox_upere">
-                                                <div className="FireJob_glightbox_img">
-                                                    <img src="images/Group.png" />
-                                                </div>
-                                                <div className="FireJob_glightbox_dta">
-                                                    <h3>YouTube Creative Strategist/Content Writer</h3>
-                                                    <ul>
-                                                        <li><img src="images/Ellips.png" /> Full Time</li>
-                                                        <li><img src="images/Frame.png" /> Dallas. TX</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="FireJob_glightbox_low">
-                                                <span>$150K+/yr</span>
-                                                <a href="">Apply Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
