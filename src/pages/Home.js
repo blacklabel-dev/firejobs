@@ -317,7 +317,6 @@ export default function Home() {
                                                 <div className="FireJob_item_data">
                                                     <h3>{el.name}</h3>
                                                     <h5>{el.role}</h5>
-                                                    <h4>Start Date:<span>{el.start_date}</span></h4>
                                                     <h4>Years of Service:<span>{el.years_of_service}</span></h4>
                                                     <h4>Favorite Pizza Topping:<span>{el.favorite_pizza_topping}</span></h4>
                                                     <button onClick={() => setSelectedBio(el)}>READ BIO</button>

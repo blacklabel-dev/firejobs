@@ -96,18 +96,6 @@ export const Teams = [
         favorite_pizza_topping: "Jalapenos"
     },
     {
-        id: "9",
-        name: "Chase",
-        image: "images/Chase.jpg",
-        years_of_service: "2 years",
-        super_power: "",
-        trophy: "",
-        role: "Gaming Creative Lead",
-        start_date: "8/31/2020",
-        bio: "",
-        favorite_pizza_topping: ""
-    },
-    {
         id: "10",
         name: "Joshua",
         image: "images/Joshua.png",
