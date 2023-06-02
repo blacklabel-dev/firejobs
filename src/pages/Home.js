@@ -233,8 +233,8 @@ export default function Home() {
                             </div>
                             <div className="col-md-6">
                                 <h2>Who we are</h2>
-                                <p>TBNR is a top YouTube Production Company that manages the massive YouTube channels and digital media
-                                    brands of Preston and Brianna Arsement.</p>
+                                <p>TBNR is a top YouTube Production Company based in Dallas, Texas that manages the massive YouTube channels and digital media brands of Preston and Brianna Arsement, and Keeley Ellis. TBNR was founded by Preston in 2010 when he launched his first YouTube Channel, TBNRFrags. Shortly thereafter he launched PrestonPlayz which currently has over 14 million subscribers!</p>
+                                <p>Our 7 YouTube channels are focused on IRL, Gaming, and Reaction content. TBNR has an innate desire to spread positive messaging and cares deeply about the kind of content that we popularize with our videos.</p>
                             </div>
                         </div>
                     </div>
