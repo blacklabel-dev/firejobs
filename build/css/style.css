@@ -415,6 +415,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_video_box img {
      width: 100%;
+     border-radius: 15px;
  }
 
  .FireJob_video {
@@ -764,34 +765,43 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      font-family: 'Raleway', sans-serif;
  }
 
+ .owl-carousel .owl-stage {
+     display: flex;
+ }
+
+ .owl-carousel.owl-drag .owl-item {
+     background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+     border-radius: 16px;
+ }
+
  .bio-modal .ant-modal-content {
-    background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+     background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
  }
 
  .bio-modal .ant-modal-content h3 {
-    color: #ffffff;
-    font-family: 'x-heightingregular';
+     color: #ffffff;
+     font-family: 'x-heightingregular';
  }
 
  .bio-modal .ant-modal-content h5 {
-    color: #f43c2c;
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
+     color: #f43c2c;
+     font-family: 'Inter', sans-serif;
+     font-size: 18px;
  }
 
  .bio-modal .ant-modal-content p {
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+     color: #ffffff;
+     font-family: 'Raleway', sans-serif;
  }
 
  .bio-modal .ant-modal-close-x {
-    color: #ffffff;
+     color: #ffffff;
  }
 
  .FireJob_item_data h5 {
-    color: #f43c2c;
-    font-size: 16px;
-    margin-bottom: 15px;
+     color: #f43c2c;
+     font-size: 16px;
+     margin-bottom: 15px;
  }
 
  .FireJob_item_data h4 span {
@@ -824,13 +834,13 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_item_data button {
-    background: #F34535;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: 'x-heightingregular';
-    margin-top: 20px;
+     background: #F34535;
+     color: #ffffff;
+     border: none;
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-family: 'x-heightingregular';
+     margin-top: 20px;
  }
 
  .FireJob_Positions {
@@ -1551,7 +1561,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      }
 
      .FireJob_video_box {
-        width: 100%;
+         width: 100%;
      }
 
      .FireJob_video h2 {
