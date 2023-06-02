@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Header from "../components/layouts/Header"
 import JobCard from "../components/home/JobCard"
 import { callGetApi } from "../utils/api/api"
+import { Teams } from "../utils/var/teams"
 
 export default function Home() {
     const [departments, setDepartments] = useState([])
@@ -104,6 +105,8 @@ export default function Home() {
             ];
     
             setCountedDepartments(countedDepartments0)
+        } else {
+            setCountedDepartments([])
         }
     }, [departments, jobs])
 
@@ -319,58 +322,21 @@ export default function Home() {
                             </div>
                             <div className="col-lg-9">
                                 <div className="owl-carousel">
-                                    <div className="item">
-                                        <div className="FireJob_item">
-                                            <div className="FireJob_item_img"><img src="images/slider1.png" /></div>
-                                            <div className="FireJob_item_data">
-                                                <h3>JON AYSON</h3>
-                                                <h4><span>3</span> Year</h4>
-                                                <ul>
-                                                    <li>Super power: <label>Controlling Elements</label></li>
-                                                    <li>Trophy: <label>Over Achiever</label></li>
-                                                </ul>
+                                    {Teams.map((el) => (
+                                        <div className="item">
+                                            <div className="FireJob_item">
+                                                <div className="FireJob_item_img"><img src={el.image} /></div>
+                                                <div className="FireJob_item_data">
+                                                    <h3>{el.name}</h3>
+                                                    <h4><span>{el.years_of_service}</span> Year</h4>
+                                                    <ul>
+                                                        <li>Super power: <label>Controlling Elements</label></li>
+                                                        <li>Trophy: <label>Over Achiever</label></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="FireJob_item">
-                                            <div className="FireJob_item_img"><img src="images/slider2.png" /></div>
-                                            <div className="FireJob_item_data">
-                                                <h3>JON AYSON</h3>
-                                                <h4><span>3</span> Year</h4>
-                                                <ul>
-                                                    <li>Super power: <label>Controlling Elements</label></li>
-                                                    <li>Trophy: <label>Over Achiever</label></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="FireJob_item">
-                                            <div className="FireJob_item_img"><img src="images/slider3.png" /></div>
-                                            <div className="FireJob_item_data">
-                                                <h3>JON AYSON</h3>
-                                                <h4><span>3</span> Year</h4>
-                                                <ul>
-                                                    <li>Super power: <label>Controlling Elements</label></li>
-                                                    <li>Trophy: <label>Over Achiever</label></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="FireJob_item">
-                                            <div className="FireJob_item_img"><img src="images/slider4.png" /></div>
-                                            <div className="FireJob_item_data">
-                                                <h3>JON AYSON</h3>
-                                                <h4><span>3</span> Year</h4>
-                                                <ul>
-                                                    <li>Super power: <label>Controlling Elements</label></li>
-                                                    <li>Trophy: <label>Over Achiever</label></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
