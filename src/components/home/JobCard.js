@@ -1,11 +1,12 @@
 import React from "react"
+import { Departments } from "../../utils/var/departments"
 
 export default function JobCard({ job }) {
     return (
         <div className="FireJob_glightbox">
             <div className="FireJob_glightbox_upere">
                 <div className="FireJob_glightbox_img">
-                    <img src="images/Group.png" />
+                    <img src={Departments.filter((el) => el.id == job.departments[0].id)[0].image} />
                 </div>
                 <div className="FireJob_glightbox_dta">
                     <h3>{job.name}</h3>

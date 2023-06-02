@@ -1,7 +1,6 @@
- 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
-/**********
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /**********
 font-family: 'Inter', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'x-heightingregular';
@@ -11,1005 +10,1684 @@ font-family: 'x-heightingregular';
     -webkit-text-fill-color: transparent;
  * **************/
 
- *, ul{margin:0;padding:0;outline:none; list-style: none;}
-img{max-width: 100%;}
-t {outline:none;text-decoration:none;}
-d {list-style: none;}
-w{max-width:100%} 
- 
-body{max-width: 1920px;margin: 0 auto;font-family: 'Inter', sans-serif;color: #000; } 
-.p0{padding:0 !important}
-.m0{margin:0 !important} 
- 
+ *,
+ ul {
+     margin: 0;
+     padding: 0;
+     outline: none;
+     list-style: none;
+ }
 
-/****************** HEADER ***********************/
-.FireJob_Main{background: url(../images/banner.png) #F88F22;display: inline-block;width: 100%;background-size: 100% 100%;background-position: center;background-repeat: no-repeat;}
-.FireJob_home-header{background: #190D1F;border-radius: 12px;margin: 30px 0;border: 1px solid #5e3678;}
-.navbar{
-    padding: 0;
-}
- 
-.navbar-brand{
+ img {
+     max-width: 100%;
+ }
+
+ t {
+     outline: none;
+     text-decoration: none;
+ }
+
+ d {
+     list-style: none;
+ }
+
+ w {
+     max-width: 100%
+ }
+
+ body {
+     max-width: 1920px;
+     margin: 0 auto;
+     font-family: 'Inter', sans-serif;
+     color: #000;
+ }
+
+ .p0 {
+     padding: 0 !important
+ }
+
+ .m0 {
+     margin: 0 !important
+ }
+
+
+ /****************** HEADER ***********************/
+ .FireJob_Main {
+     background: url(../images/banner.png) #F88F22;
+     display: inline-block;
+     width: 100%;
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ .FireJob_home-header {
+     background: #190D1F;
+     border-radius: 12px;
+     margin: 30px 0;
+     border: 1px solid #5e3678;
+ }
+
+ .navbar {
+     padding: 0;
+ }
+
+ .navbar-brand {
      width: 270px;
      padding: 10px 35px;
-} 
-.sticky{position: fixed; width: 100%; top:0; z-index: 999}
- header .navbar-nav li{
-   position: relative;
-}
-header .navbar-nav li.active:before{
-    position: absolute;
-    content: "";
-    background: url(../images/activbg.png);
-    left: -8px;
-    background-size: 100% 100%;
-    bottom: -37px;
-    z-index: 9999;
-    width: 134px;
-    height: 67px;
-}
- header .navbar-nav li strong{
-    color: #5FF177;
-}
- header .navbar-nav  li a{
-    font-weight: 500;
-    padding: 26px 0;
-    margin: 4px 50px 0 0;
-    text-transform: capitalize;
-    font-size: 16px;
-    line-height: 19px;
-/* leading-trim and text-edge are draft CSS properties.
+ }
+
+ .sticky {
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 999
+ }
+
+ header .navbar-nav li {
+     position: relative;
+ }
+
+ header .navbar-nav li.active:before {
+     position: absolute;
+     content: "";
+     background: url(../images/activbg.png);
+     left: -8px;
+     background-size: 100% 100%;
+     bottom: -37px;
+     z-index: 9999;
+     width: 134px;
+     height: 67px;
+ }
+
+ header .navbar-nav li strong {
+     color: #5FF177;
+ }
+
+ header .navbar-nav li a {
+     font-weight: 500;
+     padding: 26px 0;
+     margin: 4px 50px 0 0;
+     text-transform: capitalize;
+     font-size: 16px;
+     line-height: 19px;
+     /* leading-trim and text-edge are draft CSS properties.
 
 Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 */
-    leading-trim: both;
-    text-edge: cap;
-    color: #FFFFFF;
-    opacity: 0.6;
-}
+     leading-trim: both;
+     text-edge: cap;
+     color: #FFFFFF;
+     opacity: 0.6;
+ }
 
-  
-header .navbar-nav li.active a, header .navbar-nav li a:hover{
- border-bottom: 4px solid #F34535;
- color: #fff;
- opacity: 1;
-}
- 
-  /**************** Header CLose ***********/
 
-  footer{
-    padding: 60px 0 80px;
-    background: #190D1F;
-}
-    footer h3{
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+ header .navbar-nav li.active a,
+ header .navbar-nav li a:hover {
+     border-bottom: 4px solid #F34535;
+     color: #fff;
+     opacity: 1;
+ }
+
+ /**************** Header CLose ***********/
+
+ footer {
+     padding: 60px 0 80px;
+     background: #190D1F;
+ }
+
+ footer h3 {
+     font-size: 20px;
+     color: #FFFFFF;
+     margin-bottom: 20px;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 800;
+ }
+
+ .FireJob-Footer {}
+
+ .FireJob_footer-logo {
+     margin-bottom: 30px;
+ }
+
+ .FireJob_footer-text {}
+
+ .FireJob_footer-text p {
+     background: linear-gradient(180deg, #F89321 0%, #F34535 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+     padding: 0 50px 0 0;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 22px;
+     line-height: 32px;
+ }
+
+ .FireJob_footer-nav {}
+
+ .FireJob_footer-nav ul {}
+
+ .FireJob_footer-nav ul li {}
+
+ .FireJob_footer-nav ul li a {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 32px;
+     color: #FFFFFF;
+     opacity: 0.6;
+     text-decoration: none;
+ }
+
+ .FireJob_footer-social {}
+
+ .FireJob_footer-social ul {}
+
+ .FireJob_footer-social ul li {
+     display: inline-block;
+     padding: 0 8px 0 0;
+ }
+
+ /**************** Footer CLose ***********/
+
+
+ .FireJob_banner {}
+
+ .FireJob_banner h1 {
+     font-style: normal;
+     font-weight: 900;
+     font-size: 200px;
+     font-family: 'Gotham-Bold';
+     background: linear-gradient(180deg, #FFFFFF 0%, #F7D7C8 100%);
+     -webkit-background-clip:
+         text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+     text-align: center;
+     text-transform: uppercase;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: white;
+     margin: 50px 0;
+ }
+
+ .FireJob_banner_form {}
+
+ .dropdown,
+ .dropdown2,
+ .dropdown3 {
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(25px);
+     border-radius: 80px;
+     width: 100%;
+     color: #fff;
+     border: 1px solid rgba(255, 255, 255, .2);
+     font-size: 15px;
+ }
+
+ .select-label,
+ .select-label2,
+ .select-label3 {
+     display: inline-block;
+     width: 100%;
+ }
+
+ .dropdown .select-label,
+ .dropdown2 .select-label2,
+ .dropdown3 .select-label3 {
+     position: relative;
+     display: block;
+     width: 100%;
+     height: 60px;
+     line-height: 60px;
+     color: #fff;
+     font-size: 18px;
+     letter-spacing: 2px;
+     text-indent: 30px;
+     z-index: 9999;
+     cursor: pointer;
+     transform-style: preserve-3d;
+     transform-origin: 50% 0%;
+     transition: transform 300ms;
+     user-select: none;
+ }
+
+ .dropdown .select-label:after,
+ .dropdown2 .select-label2:after,
+ .dropdown3 .select-label3:after {
+     content: '';
+     position: absolute;
+     top: 26px;
+     right: 22px;
+     height: 8px;
+     line-height: 60px;
+     text-align: center;
+     font-size: 12px;
+     background: url(../images/dropdown.png);
+     background-size: 13px 8px;
+     width: 13px;
+     background-repeat: no-repeat;
+ }
+
+ .dropdown-list,
+ .dropdown-list2,
+ .dropdown-list3 {
+     left: 0;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+ }
+
+ .dropdown-list li,
+ .dropdown-list2 li,
+ .dropdown-list3 li {
+     display: none;
+     top: 0;
+     left: 0;
+     width: 100%;
+     font-size: 18px;
+     line-height: 60px;
+     text-indent: 30px;
+     color: #000;
+     cursor: pointer;
+     letter-spacing: 2px;
+     background-color: #f9e1d7;
+     transition-duration: .3s;
+     list-style: none;
+     opacity: 1;
+     user-select: none;
+     border-bottom: 2px solid rgba(255, 255, 255, .2);
+ }
+
+ .dropdown-list li:hover,
+ .dropdown-list2 li:hover,
+ .dropdown-list3 li:hover {
+     background-color: #f34534;
+     color: #fff;
+ }
+
+ .dropdown-list li,
+ .dropdown-list2 li,
+ .dropdown-list3 li {
+     z-index: 4;
+     transform: translateY(100%);
+ }
+
+
+ .dropdown .select-label:active:after,
+ .dropdown2 .select-label2:active:after,
+ .dropdown3 .select-label3:active:after {
+     content: '';
+     position: absolute;
+     top: 26px;
+     right: 22px;
+     height: 60px;
+     line-height: 60px;
+     text-align: center;
+     font-size: 12px;
+     background: url(../images/dropdown.png);
+     background-size: 13px 8px;
+     width: 13px;
+     background-repeat: no-repeat;
+ }
+
+ .dropdown.active .select-label:after,
+ .dropdown2.active .select-label2:after,
+ .dropdown3.active .select-label3:after {
+     content: '';
+     position: absolute;
+     top: 26px;
+     right: 22px;
+     height: 8px;
+     line-height: 60px;
+     text-align: center;
+     font-size: 12px;
+     background: url(../images/dropdown.png);
+     background-size: 13px 8px;
+     width: 13px;
+     background-repeat: no-repeat;
+     transform: rotate(180deg);
+ }
+
+ .dropdown.active .dropdown-list li,
+ .dropdown2.active .dropdown-list2 li,
+ .dropdown3.active .dropdown-list3 li {
+     display: block;
+ }
+
+ .FireJob_search {
+     text-align: center;
+ }
+
+ .FireJob_search button {
+     background: #F34535;
+     border-radius: 12px;
+     border: 0;
+     font-size: 24px;
+     line-height: 61px;
+     text-align: center;
+     color: #FFFFFF;
+     width: 221px;
+     height: 61px;
+     margin: 35px 0 0;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_best {}
+
+ .FireJob_best h2 {
+     color: #FFFFFF;
+     text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+     text-transform: uppercase;
+     text-align: center;
+     padding: 100px 0;
+     font-size: 81px;
+     font-family: 'Gotham-Bold';
+ }
+
+ .FireJob_Great {
+     padding: 20px 50px;
+ }
+
+ /******** Firejob_body ********/
+ .FireJob_body {
+     background: linear-gradient(358deg, #F13937 0%, #F88F22 100%);
+     display: inline-block;
+     width: 100%;
+     position: relative;
+ }
+
+ .FireJob_body:before {
+     content: "";
+     background-image: url(../images/right.png);
+     background-repeat: no-repeat;
+     position: absolute;
+     right: 0px;
+     width: 300px;
+     height: 600px;
+     top: 100px;
+ }
+
+ .FireJob_video_box {
+     width: 90%;
+ }
+
+ .FireJob_video_box img {
+     width: 100%;
+ }
+
+ .FireJob_video {
+     position: relative;
+ }
+
+ .FireJob_video h2 {
+     font-weight: 400;
+     font-size: 60px;
+     line-height: 86px;
+     letter-spacing: 0.02em;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_video p {
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 28px;
+     color: #FFFFFF;
+     opacity: 0.65;
+     font-family: 'Raleway', sans-serif;
+ }
+
+ .FireJob_star {
+     position: relative;
+ }
+
+ .FireJob_brand {
+     background: url(../images/start.png);
+     background-repeat: no-repeat;
+     text-align: center;
+     background-size: 100% 100%;
+     padding: 50px 0;
+     margin: 100px 0;
+ }
+
+ .FireJob_brand h2 {
+     font-weight: 400;
+     font-size: 30px;
+     line-height: 62px;
+     text-align: center;
+     color: #fff;
+     font-family: 'x-heightingregular';
+     margin-bottom: 30px;
+ }
+
+ .FireJob_Channels {}
+
+ .FireJob_Channels h3 {
+     font-size: 40px;
+     line-height: 68px;
+     text-align: center;
+     background: linear-gradient(179deg, #F89321 0%, #F34535 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Channels span {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 28px;
+     color: #FFFFFF;
+     font-family: 'Raleway', sans-serif;
+ }
+
+ .filtering {
+     margin-bottom: 40px;
+ }
+
+ .filtering span {
+     border-bottom: 2px solid transparent;
+     color: #282b2d;
+     cursor: pointer;
+     font-size: 15px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-right: 20px;
+     display: inline-block;
+     margin-bottom: 5px;
+ }
+
+ .filtering span:last-child {
+     margin: 0;
+ }
+
+ .filtering .active {
+     border-color: #ccde02;
+     color: #ccde02;
+ }
+
+ .portfolio-wrapper {
+     position: relative;
+     overflow: hidden;
+ }
+
+ .portfolio-overlay {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     transition: all 500ms ease;
+ }
+
+ .portfolio-wrapper .portfolio-image img {
+     transform: scale(1.2);
+     will-change: transform;
+     transition: all 0.5s ease;
+     width: 100%;
+ }
+
+ .portfolio-wrapper:hover .portfolio-image img {
+     transform: none;
+ }
+
+ .portfolio-overlay:before {
+     position: absolute;
+     display: inline-block;
+     top: 15px;
+     right: 15px;
+     bottom: 15px;
+     left: 15px;
+     border: 1px solid rgba(0, 0, 0, 0.36);
+     content: "";
+     opacity: 0;
+     transition: all 0.5s ease;
+     transform: scale(0.85);
+ }
+
+ .portfolio-overlay .portfolio-content {
+     position: absolute;
+     bottom: 50%;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     opacity: 0;
+     padding: 0 35px;
+ }
+
+ .portfolio-content h4 {
+     color: #000;
+     font-weight: 600;
+     font-size: 20px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     margin-bottom: 15px;
+ }
+
+ .portfolio-content p {
+     color: #000;
+     font-weight: 500;
+     letter-spacing: 1px;
+     margin-bottom: 0;
+ }
+
+ .portfolio-content>a {
+     line-height: 42px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     color: #000;
+     display: inline-block;
+     text-align: center;
+     margin-bottom: 15px;
+     font-weight: 800;
+ }
+
+ .portfolio-wrapper:hover .portfolio-overlay {
+     background-color: rgba(204, 222, 2, 0.85);
+ }
+
+ .portfolio-wrapper:hover .portfolio-overlay:before {
+     opacity: 1;
+     visibility: visible;
+     transform: none;
+ }
+
+ .portfolio-wrapper:hover .portfolio-overlay .portfolio-content {
+     transform: translateY(50%);
+     transition: transform 0.5s ease;
+     opacity: 1;
+ }
+
+ .FireJob_Pillars_section {
+     text-align: center;
+     background: url(../images/left1.png);
+     background-size: 300px;
+     background-repeat: no-repeat;
+     padding: 0 0 100px;
+ }
+
+ .FireJob_Pillars_section h2 {
+     font-size: 45px;
+     line-height: 64px;
+     text-align: center;
+     color: #FFFFFF;
+     text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+     text-transform: uppercase;
+     font-family: 'x-heightingregular';
+     padding: 100px 50px;
+ }
+
+ .FireJob_Pillars_section h3 {
+     font-size: 38px;
+     line-height: 83px;
+     text-align: center;
+     color: #FFFFFF;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Pillars {
+     background: url(../images/Pillars.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     padding: 50px 0;
+     border-radius: 10px;
+     overflow: hidden;
+ }
+
+ .FireJob_Great h4 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 26px;
+     line-height: 37px;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-family: 'x-heightingregular';
+     margin-bottom: 15px;
+ }
+
+ .FireJob_Great ul li {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 21px;
+     color: #FFFFFF;
+     opacity: 0.7;
+     margin: 10px 0;
+ }
+
+ .FireJob_Perks {
+     padding: 100px 0 0;
+     background: url(../images/right2.png);
+     background-size: 500px;
+     background-position: top right;
+     background-repeat: no-repeat;
+ }
+
+ .FireJob_Perks h2 {
+     font-size: 38px;
+     line-height: 67px;
+     text-align: center;
+     color: #FFFFFF;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Perks p {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 21px;
+     color: #FFFFFF;
+     opacity: 0.7;
+     margin: 0 0 50px;
+     text-align: center;
+ }
+
+ .FireJob_col {
+     background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+     border: 1px solid #1C1B38;
+     border-radius: 16px;
+     text-align: center;
+     padding: 40px 30px;
+     width: 100%;
+     margin: 15px 0;
+ }
+
+ .FireJob_col span {
+     width: 90px;
+     height: 135px;
+     display: inline-block;
+ }
+
+ .FireJob_col img {}
+
+ .FireJob_col h4 {
+     font-size: 21px;
+     line-height: 28px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Trailblazers {
+     padding: 50px 0 0;
+ }
+
+ .FireJob_Trailblazers h2 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 38px;
+     line-height: 37px;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Trailblazers p {
+     line-height: 22px;
+     color: #FFFFFF;
+     opacity: 0.7;
+     font-weight: 400;
+     font-size: 16px;
+ }
+
+ .FireJob_item {
+     background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+     border-radius: 16px;
+     overflow: hidden;
+ }
+
+ .FireJob_item_img img {}
+
+ .FireJob_item_data {
+     padding: 30px 25px 50px;
+ }
+
+ .FireJob_item_data h3 {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 26px;
+     line-height: 37px;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_item_data h4 {
+     font-weight: 400;
+     font-size: 13px;
+     color: #c4bfc2;
+     font-family: 'Raleway', sans-serif;
+ }
+
+ .bio-modal .ant-modal-content {
+    background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+ }
+
+ .bio-modal .ant-modal-content h3 {
+    color: #ffffff;
+    font-family: 'x-heightingregular';
+ }
+
+ .bio-modal .ant-modal-content h5 {
+    color: #f43c2c;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+ }
+
+ .bio-modal .ant-modal-content p {
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-}
-  .FireJob-Footer{}
-  .FireJob_footer-logo{
-    margin-bottom: 30px;
-}
-  .FireJob_footer-text{}
-  .FireJob_footer-text p{
-    background: linear-gradient(180deg, #F89321 0%, #F34535 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    padding: 0 50px 0 0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
-}
-  .FireJob_footer-nav{}
-  .FireJob_footer-nav ul {}
-  .FireJob_footer-nav ul li{}
-    .FireJob_footer-nav ul li a{
-    font-weight: 500;
+ }
+
+ .bio-modal .ant-modal-close-x {
+    color: #ffffff;
+ }
+
+ .FireJob_item_data h5 {
+    color: #f43c2c;
     font-size: 16px;
-    line-height: 32px; 
-    color: #FFFFFF;
-    opacity: 0.6;
-    text-decoration: none;
-}
-  .FireJob_footer-social{}
-  .FireJob_footer-social ul{}
-  .FireJob_footer-social ul li{
-    display: inline-block;
-    padding: 0 8px  0 0;
-}
-    /**************** Footer CLose ***********/
- 
+    margin-bottom: 15px;
+ }
 
- .FireJob_banner{
+ .FireJob_item_data h4 span {
+     border-radius: 4px;
+     color: #fff;
+     opacity: 1;
+     padding: 1px 9px 4px;
+     display: inline-block;
+     line-height: 20px;
+ }
+
+ .FireJob_item_data ul {}
+
+ .FireJob_item_data ul li {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 22px;
+     color: #c4bfc2;
+     font-family: 'Raleway', sans-serif;
+     margin: 6px 0;
+ }
+
+ .FireJob_item_data ul li label {
+     background: #F34535;
+     border-radius: 4px;
+     color: #fff;
+     opacity: 1;
+     padding: 2px 5px;
+     display: inline-block;
+ }
+
+ .FireJob_item_data button {
+    background: #F34535;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'x-heightingregular';
+    margin-top: 20px;
+ }
+
+ .FireJob_Positions {
+     background: url(../images/left1.png);
+     background-size: 300px;
+     background-repeat: no-repeat;
+ }
+
+ .FireJob_Positions h2 {
+     font-size: 38px;
+     line-height: 67px;
+     text-align: center;
+     color: #FFFFFF;
+     font-family: 'x-heightingregular';
+ }
+
+ .FireJob_Positions_button {
+     text-align: center;
+ }
+
+ .FireJob_Positions_button button {
+     background: #DE6327;
+     border-radius: 12px;
+     color: #FFFFFF;
+     font-size: 17px;
+     font-family: 'Raleway', sans-serif;
+     padding: 13px 10px 13px 30px;
+     margin: 10px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .FireJob_Positions_button button.active {
+     background: #fff;
+     color: #F45E2F;
+ }
+
+ .FireJob_Positions_button button.active span {
+     color: #fff;
+     background: #F45E2F;
+ }
+
+ .FireJob_Positions_button button span {
+     color: #F45E2F;
+     background: #fff;
+     border-radius: 6px;
+     padding: 7px 12px;
+     font-family: 'Raleway', sans-serif;
+     margin: 0 0 0 11px;
+ }
+
+ .FireJob_Portfolio {
+     margin: 50px 0;
+ }
+
+ .FireJob_Portfolio .Creative {}
+
+ .FireJob_glightbox {
+     background: url(../images/Group-bg.png);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     padding: 30px;
+     position: relative;
+     overflow: hidden;
+     border-radius: 10px;
+     margin: 15px 0;
+ }
+
+ .FireJob_glightbox_upere {
+     position: relative;
+     z-index: 1;
+ }
+
+ .FireJob_glightbox_img {
+     width: 85px;
+     float: left;
+ }
+
+ .FireJob_glightbox_img img {
+     width: 60px;
+ }
+
+ .FireJob_glightbox_dta {}
+
+ .FireJob_glightbox_dta h3 {
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 30px;
+     color: #fff;
+     font-family: 'x-heightingregular';
+     min-height: 60px;
+ }
+
+ .FireJob_glightbox_dta {
+     float: left;
+     width: calc(100% - 85px);
+ }
+
+ .FireJob_glightbox_dta ul {}
+
+ .FireJob_glightbox_dta ul li {
+     display: inline-block;
+     color: #FFFFFF;
+     font-size: 14px;
+     font-family: 'Raleway', sans-serif;
+     margin: 0 8px 0 0;
+ }
+
+ .FireJob_glightbox_low {
+     border-top: 1px solid rgba(255, 255, 255, 0.15);
+     display: inline-block;
+     width: 100%;
+     padding: 20px 0 0;
+     margin: 20px 0 0;
+     position: relative;
+     z-index: 1;
+ }
+
+ .FireJob_glightbox_low span {
+     font-weight: 400;
+     font-size: 18px;
+     color: #fff;
+     font-family: 'x-heightingregular';
+     margin: 5px 0;
+     display: inline-block;
+ }
+
+ .FireJob_glightbox_low a {
+     text-align: center;
+     width: 150px;
+     height: 36px;
+     background: #F34535;
+     border-radius: 6px;
+     float: right;
+     color: #fff;
+     text-decoration: none;
+     font-family: 'x-heightingregular';
+     font-size: 16px;
+     line-height: 35px;
+     position: relative;
+ }
+
+ .Creative .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #470CF0;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #470CF0;
+ }
+
+ .Gaming .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #28FF71;
+     top: 0;
+     box-shadow: 10px 0 195px 9px #28FF71;
+ }
+
+ .Post .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #C71B82;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #C71B82;
+ }
+
+ .Production .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #E52222;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #E52222;
+ }
+
+ .Department .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #FFF386;
+     top: 0;
+     box-shadow: 10px 0 200px 9px #FFF386;
+ }
+
+ .Keeley .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #86D3FF;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #86D3FF;
+ }
+
+ .Properties .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #F5692C;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #F5692C;
+ }
+
+ .Resources .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #C71B82;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #C71B82;
+ }
+
+ .Information .FireJob_glightbox:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #E52222;
+     top: 0;
+     box-shadow: 10px 0 200px 16px #E52222;
+ }
+
+ .column {
+     display: none;
+ }
+
+ .FireJob_glightbox_low a:before {
+     content: "";
+     background: url(../images/Vector.png);
+     width: 8px;
+     height: 14px;
+     position: absolute;
+     right: 7px;
+     background-repeat: no-repeat;
+     background-size: 6px 12px;
+     top: 11px;
+ }
+
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ /* Content */
+
+ .content {
+     background-color: white;
+     padding: 10px;
+ }
+
+ .show {
+     display: block;
+ }
+
+ /* Style the buttons */
+ .btn {
+     border: none;
+     outline: none;
+     padding: 12px 16px;
+     background-color: white;
+     cursor: pointer;
+ }
+
+ .btn:hover {
+     background-color: #fff;
+     color: #DE6327;
+ }
+
+ .btn.active {
+     background-color: #666;
+     color: white;
+ }
+
+ .FireJob_Positions_button button.Creative:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #86D3FF;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Gaming:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #28FF71;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Post:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #E573B8;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Production:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #A7BAC5;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Department:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #FFF386;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Keeley:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #86D3FF;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Properties:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #B373E5;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Fire:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #E52222;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Resources:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #EAEE13;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Information:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #6C5F7C;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Operations:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #470CF0;
+     top: 0;
+ }
+
+ .FireJob_Positions_button button.Sales:before {
+     content: "";
+     width: 6px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     background: #C71B82;
+     top: 0;
+ }
+
+ .dropdown2.active {
+     position: relative;
+     z-index: 8
+ }
+
+ .dropdown3.active {
+     position: relative;
+     z-index: 7
+ }
+
+ .dropdown.active {
+     position: relative;
+     z-index: 9
+ }
+
+ @media(min-width:1200px) and (max-width:1399px) {
+
+     header .navbar-nav li a {
+         margin: 4px 30px 0 0;
+     }
+
+     .FireJob_glightbox_dta h3 {
+         min-height: 90px;
+     }
+ }
+
+ @media(min-width:992px) and (max-width:1199px) {
+
+     header .navbar-nav li a {
+         margin: 0 8px;
+         font-size: 13px;
+     }
+
+     .FireJob_banner h1 {
+         font-size: 150px
+     }
+
+     .FireJob_best h2 {
+         font-size: 60px
+     }
+
+     .FireJob_video h2 {
+         font-size: 45px
+     }
+
+     .FireJob_Channels h3 {
+         font-size: 35px
+     }
+
+     .FireJob_Positions h2,
+     .FireJob_Trailblazers h2,
+     .FireJob_Perks h2,
+     .FireJob_Pillars_section h3 {
+         font-size: 30px
+     }
+
+     .FireJob_glightbox_img {
+         width: 50px
+     }
+
+     .FireJob_glightbox_img img {
+         width: 40px
+     }
+
+     .FireJob_glightbox_dta {
+         float: left;
+         width: calc(100% - 50px);
+     }
+
+     .FireJob_glightbox_dta h3 {
+         font-size: 16px;
+         line-height: 23px;
+     }
+
+     .FireJob_Positions_button button {
+         font-size: 14px
+     }
+
+     .FireJob_glightbox_low span {
+         font-size: 16px
+     }
+
+     .FireJob_glightbox_low a {
+         width: 130px;
+         font-size: 14px;
+     }
+
+     .FireJob_col h4 {
+         font-size: 16px;
+         line-height: 23px;
+         text-align: center;
+     }
+
+     .FireJob_col span {
+         width: 67px;
+         height: 106px;
+         display: inline-block;
+     }
+
+     .FireJob_Pillars_section h2 {
+         font-size: 33px;
+         line-height: 58px;
+         padding: 60px 50px;
+     }
+
+     .FireJob_Great {
+         padding: 20px 15px;
+     }
+
+     .FireJob_Great h4 {
+         font-size: 20px;
+     }
+
+     .FireJob_Great ul li {
+         font-size: 14px
+     }
+ }
+
+ @media(min-width:768px) and (max-width:991px) {
+
+     header .navbar-nav li a {
+         margin: 0 8px;
+         font-size: 13px;
+     }
+
+     .FireJob_banner h1 {
+         font-size: 100px;
+     }
+
+     .FireJob_best h2 {
+         font-size: 44px;
+     }
+
+     .FireJob_video h2 {
+         font-size: 39px;
+         line-height: 34px;
+     }
+
+     .FireJob_Channels h3 {
+         font-size: 25px;
+         line-height: 30px;
+     }
+
+     .FireJob_Positions h2,
+     .FireJob_Trailblazers h2,
+     .FireJob_Perks h2,
+     .FireJob_Pillars_section h3 {
+         font-size: 30px
+     }
+
+     .FireJob_glightbox_img {
+         width: 50px
+     }
+
+     .FireJob_glightbox_img img {
+         width: 40px
+     }
+
+     .FireJob_glightbox_dta {
+         float: left;
+         width: calc(100% - 50px);
+     }
+
+     .FireJob_glightbox_dta h3 {
+         font-size: 16px;
+         line-height: 23px;
+     }
+
+     .FireJob_Positions_button button {
+         font-size: 14px
+     }
+
+     .FireJob_glightbox_low span {
+         font-size: 16px
+     }
+
+     .FireJob_glightbox_low a {
+         width: 130px;
+         font-size: 14px;
+     }
+
+     .FireJob_col h4 {
+         font-size: 20px;
+         line-height: 30px;
+         text-align: center;
+     }
+
+     .FireJob_col span {
+         width: 67px;
+         height: 106px;
+         display: inline-block;
+     }
+
+     .FireJob_Pillars_section h2 {
+         font-size: 27px;
+         line-height: 54px;
+         padding: 60px 50px;
+     }
+
+     .FireJob_Great {
+         padding: 20px 15px;
+     }
+
+     .FireJob_Great h4 {
+         font-size: 26px;
+     }
+
+     .FireJob_Great ul li {
+         font-size: 16px;
+     }
+
+     footer h3 {
+         margin-top: 30px
+     }
+
+     .navbar-brand {
+         width: 120px;
+         padding: 0;
+     }
+
+     header .navbar-nav li a {
+         margin: 0 4px;
+         font-size: 12px;
+     }
+
+     .FireJob_search button {
+         font-size: 21px;
+     }
+
+     .FireJob_video p {
+         font-size: 16px;
+         line-height: 22px;
+     }
+
+     .FireJob_Channels span {
+         font-size: 17px
+     }
+
+     .FireJob_Trailblazers p {
+         margin-bottom: 40px;
+     }
+
+     footer {
+         text-align: center;
+     }
+
+     .FireJob_footer-text p {
+         padding: 0
+     }
+
+     .FireJob_Main {
+         background-size: cover;
+     }
+ }
+
+ @media(min-width:200px) and (max-width:767px) {
+     .FireJob_home-header {
+         position: absolute;
+         top: 15px;
+         width: 90%;
+         left: 0;
+         z-index: 999;
+         right: 0;
+         margin: 0 auto;
+     }
+
+     .FireJob_Main {
+         background-size: cover;
+     }
+
+     .FireJob_footer-text p {
+         padding: 0
+     }
+
+     footer,
+     .FireJob_Trailblazers h2,
+     .FireJob_Trailblazers p {
+         text-align: center;
+     }
+
+     .navbar-toggler {
+         background: url(../images/menu.png);
+         background-repeat: no-repeat;
+         background-size: 42px;
+         width: 44px;
+         height: 44px;
+     }
+
+     header .navbar-nav li a {
+         margin: 0 8px;
+         font-size: 13px;
+     }
+
+     .FireJob_banner h1 {
+         font-size: 68px;
+         margin: 120px 0 20px;
+         display: inline-block;
+         width: 100%;
+     }
+
+     .FireJob_best h2 {
+         font-size: 44px;
+         padding: 50px 0;
+     }
+
+     .FireJob_video h2 {
+         font-size: 39px;
+         line-height: 34px;
+         margin: 40px 0 10px;
+         text-align: center;
+     }
+
+     .FireJob_Channels h3 {
+         font-size: 31px;
+         line-height: 30px;
+     }
+
+     .FireJob_Positions h2,
+     .FireJob_Trailblazers h2,
+     .FireJob_Perks h2,
+     .FireJob_Pillars_section h3 {
+         font-size: 30px
+     }
+
+     .FireJob_glightbox_img {
+         width: 100%;
+     }
+
+     .FireJob_glightbox_img img {
+         width: 40px
+     }
+
+     .FireJob_glightbox_dta {
+         float: left;
+         width: 100%;
+     }
+
+     .FireJob_glightbox_dta h3 {
+         font-size: 16px;
+         line-height: 23px;
+     }
+
+     .FireJob_Positions_button button {
+         font-size: 14px
+     }
+
+     .FireJob_glightbox_low span {
+         font-size: 16px
+     }
+
+     .FireJob_glightbox_low a {
+         width: 130px;
+         font-size: 14px;
+     }
+
+     .FireJob_col h4 {
+         font-size: 20px;
+         line-height: 30px;
+         text-align: center;
+     }
+
+     .FireJob_col span {
+         width: 67px;
+         height: 106px;
+         display: inline-block;
+     }
+
+     .FireJob_Pillars_section h2 {
+         font-size: 26px;
+         line-height: 42px;
+         padding: 50px 0;
+     }
+
+     .FireJob_Great {
+         padding: 20px 15px;
+     }
+
+     .FireJob_Great h4 {
+         font-size: 26px;
+     }
+
+     .FireJob_Great ul li {
+         font-size: 16px;
+     }
+
+     footer h3 {
+         margin-top: 30px
+     }
+
+     .navbar-brand {
+         width: 200px;
+         padding: 8px;
+     }
+
+     header .navbar-nav li a {
+         margin: 3px 4px;
+         font-size: 17px;
+     }
+
+     .FireJob_search button {
+         font-size: 19px;
+         width: auto;
+         padding: 1px 25px;
+         height: auto;
+     }
+
+     .FireJob_video p {
+         font-size: 16px;
+         line-height: 22px;
+         text-align: center;
+     }
+
+     .FireJob_Channels span {
+         font-size: 17px
+     }
+
+     .FireJob_Trailblazers p {
+         margin-bottom: 40px;
+     }
+
+     .FireJob_Channels {
+         margin: 20px 0
+     }
+
+     .FireJob_brand {
+         margin: 50px 0;
+         background-size: cover;
+         overflow: hidden;
+         border-radius: 40px;
+     }
+
+     .FireJob_Perks {
+         padding: 50px 0
+     }
+
+     .FireJob_select {
+         margin: 10px 0
+     }
+ }
+
+ @media(min-width:571px) and (max-width:767px) {
+     .FireJob_glightbox_low a {
+         float: left;
+     }
 
  }
- .FireJob_banner h1{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 200px;
-    font-family: 'Gotham-Bold';
-    background: linear-gradient(180deg, #FFFFFF 0%, #F7D7C8 100%);
-    -webkit-background-clip: 
-    text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    margin: 50px 0;
-    }
- .FireJob_banner_form{}
-  .dropdown, .dropdown2 , .dropdown3 {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(25px);
-  border-radius: 80px;
-  width: 100%;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, .2);
-  font-size: 15px;
-}
-.select-label, .select-label2, .select-label3{
-        display: inline-block;
-    width: 100%;
-    padding: 18px 20px;
-}
-.dropdown .select-label , .dropdown2 .select-label2, , .dropdown3 .select-label3 {  
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-indent:30px;
-  background: #34495e;    
-  z-index: 9999;
-  cursor: pointer;
-  transform-style: preserve-3d;  
-  transform-origin: 50% 0%;
-  transition: transform 300ms;
-  user-select: none;
-}
-.dropdown .select-label:after , .dropdown2 .select-label2:after , .dropdown3 .select-label3:after {
-  content: '';
-  position: absolute;
-  top: 26px;
-  right: 22px;
-  height: 8px;
-  line-height: 60px;
-  text-align: center;
-  font-size: 12px;
-  background: url(../images/dropdown.png);
-  background-size: 13px 8px;
-  width: 13px;
-  background-repeat: no-repeat;
-}
-.dropdown-list, .dropdown-list2, .dropdown-list3 {
-  left: 0;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-.dropdown-list li, .dropdown-list2 li, .dropdown-list3 li {
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-size: 18px;
-  line-height: 60px;
-  text-indent:30px;
-  color: #000;
-  cursor: pointer;
-  letter-spacing: 2px;
-  background-color: #f9e1d7;
-  transition-duration:.3s;
-  list-style: none;
-  opacity: 1;
-  user-select: none;
-  border-bottom: 2px solid rgba(255, 255, 255, .2);
-}
-.dropdown-list li:hover, .dropdown-list2 li:hover, .dropdown-list3 li:hover  {background-color: #f34534;color: #fff;}
-.dropdown-list li, .dropdown-list2 li, .dropdown-list3 li{z-index:4;  transform: translateY(100%);}
- 
-
-.dropdown .select-label:active:after, .dropdown2 .select-label2:active:after, .dropdown3 .select-label3:active:after {
- content: '';
-  position: absolute;
-  top: 26px;
-  right: 22px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  font-size: 12px;
-  background: url(../images/dropdown.png);
-  background-size: 13px 8px;
-  width: 13px;
-  background-repeat: no-repeat;
-}
-
-.dropdown.active .select-label:after, .dropdown2.active .select-label2:after, .dropdown3.active .select-label3:after {
- content: '';
- position: absolute;
- top: 26px;
- right: 22px;
- height: 8px;
- line-height: 60px;
- text-align: center;
- font-size: 12px;
- background: url(../images/dropdown.png);
- background-size: 13px 8px;
- width: 13px;
- background-repeat: no-repeat;
- transform: rotate(180deg);
-} 
-.dropdown.active .dropdown-list li,.dropdown2.active .dropdown-list2 li,.dropdown3.active .dropdown-list3 li{
-  display: block;
-}
-  .FireJob_search{
-    text-align: center;
-}
-  .FireJob_search button{
-    background: #F34535;
-    border-radius: 12px;
-    border: 0;
-    font-size: 24px;
-    line-height: 61px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 221px;
-    height: 61px;
-    margin: 35px 0 0;
-    font-family: 'x-heightingregular';
-}
-.FireJob_best{}
-.FireJob_best h2{
-    color: #FFFFFF;
-    text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 100px 0;
-    font-size: 81px;
-    font-family: 'Gotham-Bold';
-}
-.FireJob_Great{
-    padding: 20px 50px;
-}
-/******** Firejob_body ********/
-.FireJob_body{
-    background: linear-gradient(358deg, #F13937 0%, #F88F22 100%);
-    display: inline-block;
-    width: 100%;
-     position: relative;
-}
-.FireJob_body:before{
-    content:"";
-    background-image: url(../images/right.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    height: 600px;
-    top: 100px;
-}
-  
-.FireJob_video_box{
-    width: 90%;
-}
-.FireJob_video_box video{
-    width: 100%;
-}
-.FireJob_video{
-    position: relative;
-}
-.FireJob_video h2{
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 86px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'x-heightingregular';
-}
-.FireJob_video p{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #FFFFFF;
-    opacity: 0.65;
-    font-family: 'Raleway', sans-serif;
-}
-
-.FireJob_star{
-    position: relative;
-}
-.FireJob_brand{
-    background: url(../images/start.png);
-    background-repeat: no-repeat;
-    text-align: center;
-    background-size: 100% 100%;
-    padding: 50px 0;
-    margin: 100px 0;
-}
-.FireJob_brand h2{
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 62px;
-    text-align: center;
-    color: #fff;
-    font-family: 'x-heightingregular';
-    margin-bottom: 30px;
-}
-.FireJob_Channels{}
-.FireJob_Channels h3{
-    font-size: 40px;
-    line-height: 68px;
-    text-align: center;
-    background: linear-gradient(179deg, #F89321 0%, #F34535 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Channels span{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    color: #FFFFFF;
-    font-family: 'Raleway', sans-serif;
-}
-
-.filtering {
-    margin-bottom: 40px;
-}
-.filtering span {
-    border-bottom: 2px solid transparent;
-    color: #282b2d;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-right: 20px;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.filtering span:last-child {
-    margin: 0;
-}
-.filtering .active {
-    border-color: #ccde02;
-    color: #ccde02;
-}
-.portfolio-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-.portfolio-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 500ms ease;
-}
-.portfolio-wrapper .portfolio-image img {
-    transform: scale(1.2);
-    will-change: transform;
-    transition: all 0.5s ease;
-    width: 100%;
-}
-.portfolio-wrapper:hover .portfolio-image img {
-    transform: none;
-}
-.portfolio-overlay:before {
-    position: absolute;
-    display: inline-block;
-    top: 15px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.36);
-    content: "";
-    opacity: 0;
-    transition: all 0.5s ease;
-    transform: scale(0.85);
-}
-.portfolio-overlay .portfolio-content {
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    padding: 0 35px;
-}
-.portfolio-content h4 {
-    color: #000;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-.portfolio-content p {
-    color: #000;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-}
-.portfolio-content > a {
-    line-height: 42px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: #000;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 15px;
-    font-weight: 800;
-}
-.portfolio-wrapper:hover .portfolio-overlay {
-    background-color: rgba(204, 222, 2, 0.85);
-}
-.portfolio-wrapper:hover .portfolio-overlay:before {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-}
-.portfolio-wrapper:hover .portfolio-overlay .portfolio-content {
-    transform: translateY(50%);
-    transition: transform 0.5s ease;
-    opacity: 1;
-}
-
-.FireJob_Pillars_section{
-    text-align: center;
-    background: url(../images/left1.png);
-    background-size: 300px;
-    background-repeat: no-repeat;
-    padding: 0 0 100px;
-}
-.FireJob_Pillars_section h2{
-    font-size: 45px;
-    line-height: 64px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    font-family: 'x-heightingregular';
-    padding: 100px 50px;
-}
-.FireJob_Pillars_section h3{
-    font-size: 38px;
-    line-height: 83px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Pillars{
-    background: url(../images/Pillars.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 50px 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.FireJob_Great h4{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 37px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'x-heightingregular';
-    margin-bottom: 15px;
-}
-.FireJob_Great ul li{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    opacity: 0.7;
-    margin: 10px 0;
-}
-.FireJob_Perks{
-    padding: 100px 0 0;
-    background: url(../images/right2.png);
-    background-size: 500px;
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-.FireJob_Perks h2{
-    font-size: 38px;
-    line-height: 67px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Perks p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    opacity: 0.7;
-    margin: 0 0 50px;
-    text-align: center;
-}
-.FireJob_col{
-    background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
-    border: 1px solid #1C1B38;
-    border-radius: 16px;
-    text-align: center;
-    padding: 40px 30px;
-    width: 100%;
-    margin: 15px 0;
-}
-.FireJob_col span{
-    width: 90px;
-    height: 135px;
-    display: inline-block;
-}
-.FireJob_col img{}
-.FireJob_col h4{
-    font-size: 21px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Trailblazers{
-    padding: 50px 0 0;
-}
-.FireJob_Trailblazers h2{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 37px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Trailblazers p{
-    line-height: 22px;
-    color: #FFFFFF;
-    opacity: 0.7;
-    font-weight: 400;
-    font-size: 16px;
-}
-.FireJob_item{
-    background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
-    border-radius: 16px;
-    overflow: hidden;
-}
-.FireJob_item_img img{
-}
-.FireJob_item_data{
-    padding: 30px 25px 50px;
-}
-.FireJob_item_data h3{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 37px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'x-heightingregular';
-}
-.FireJob_item_data h4{
-    font-weight: 400;
-    font-size: 15px;
-    color: #c4bfc2;
-    font-family: 'Raleway', sans-serif;
-}
-.FireJob_item_data h4 span{
-    background: #F34535;
-    border-radius: 4px;
-    color: #fff;
-    opacity: 1;
-    padding: 1px 9px 4px;
-    display: inline-block;
-    line-height: 20px;
-}
-.FireJob_item_data ul{}
-.FireJob_item_data ul li{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #c4bfc2;
-    font-family: 'Raleway', sans-serif;
-    margin: 6px 0;
-}
-.FireJob_item_data ul li label{
-    background: #F34535;
-    border-radius: 4px;
-    color: #fff;
-    opacity: 1;
-    padding: 2px 5px;
-    display: inline-block;
-}
-
-.FireJob_Positions{
-    background: url(../images/left1.png);
-    background-size: 300px;
-    background-repeat: no-repeat;
-}
-.FireJob_Positions h2{
-    font-size: 38px;
-    line-height: 67px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'x-heightingregular';
-}
-.FireJob_Positions_button{
-    text-align: center;
-}
-.FireJob_Positions_button button{
-    background: #DE6327;
-    border-radius: 12px;
-    color: #FFFFFF;
-    font-size: 17px;
-    font-family: 'Raleway', sans-serif;
-    padding: 13px 10px 13px 30px;
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.FireJob_Positions_button button.active{
-    background: #fff;
-    color: #F45E2F;
-}
-.FireJob_Positions_button button.active span{
-    color: #fff;
-    background: #F45E2F;
-}
-.FireJob_Positions_button button span{
-    color: #F45E2F;
-    background: #fff;
-    border-radius: 6px;
-    padding: 7px 12px;
-    font-family: 'Raleway', sans-serif;
-    margin: 0 0  0 11px;
-}
-.FireJob_Portfolio{
-    margin: 50px 0;
-}
-.FireJob_Portfolio .Creative{}
-.FireJob_glightbox{
-    background: url(../images/Group-bg.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 15px 0;
-}
-.FireJob_glightbox_upere{
-    position: relative;
-    z-index: 1;
-}
-.FireJob_glightbox_img{
-    width: 85px;
-    float: left;
-}
-.FireJob_glightbox_img img{}
-.FireJob_glightbox_dta{}
-.FireJob_glightbox_dta h3{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff;
-    font-family: 'x-heightingregular';
-    min-height: 60px;
-}
-.FireJob_glightbox_dta{
-    float: left;
-    width: calc(100% - 85px);
-}
-.FireJob_glightbox_dta ul {}
-.FireJob_glightbox_dta ul li{
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-    margin: 0 8px 0 0;
-}
-.FireJob_glightbox_low{
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    display: inline-block;
-    width: 100%;
-    padding: 20px 0 0;
-    margin: 20px 0 0;
-    position: relative;
-    z-index: 1;
-}
-.FireJob_glightbox_low span{font-weight: 400;font-size: 18px;color: #fff;font-family: 'x-heightingregular';margin: 5px 0;display: inline-block;}
-.FireJob_glightbox_low a{text-align: center;width: 150px;height: 36px;background: #F34535;border-radius: 6px;float: right;color: #fff;text-decoration: none;font-family: 'x-heightingregular';font-size: 16px;line-height: 35px;position: relative;}
-   .Creative .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #470CF0;top: 0;box-shadow: 10px 0 200px 16px #470CF0;}
-  .Gaming .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #28FF71;top: 0;box-shadow: 10px 0 195px 9px #28FF71;}
-   .Post .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #C71B82;top: 0;box-shadow: 10px 0 200px 16px #C71B82;}
-  .Production .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #E52222;top: 0;box-shadow: 10px 0 200px 16px #E52222;}
-   .Department .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #FFF386;top: 0;box-shadow: 10px 0 200px 9px #FFF386;}
-  .Keeley .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #86D3FF;top: 0;box-shadow: 10px 0 200px 16px #86D3FF;}
-   .Properties .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #F5692C;top: 0;box-shadow: 10px 0 200px 16px #F5692C;}
-  .Resources .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #C71B82;top: 0;box-shadow: 10px 0 200px 16px #C71B82;}
-   .Information .FireJob_glightbox:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #E52222;top: 0;box-shadow: 10px 0 200px 16px #E52222;}
-    
-.column {
-display: none;
-}
-.FireJob_glightbox_low a:before{
-    content: "";
-    background: url(../images/Vector.png);
-    width: 8px;
-    height: 14px;
-    position: absolute;
-    right: 7px;
-    background-repeat: no-repeat;
-    background-size: 6px 12px;
-    top: 11px;
-}
- 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-
-.content {
-  background-color: white;
-  padding: 10px;
-}
- 
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #fff;
-  color: #DE6327;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-} 
-.FireJob_Positions_button button.Creative:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #86D3FF;top: 0; }
-.FireJob_Positions_button button.Gaming:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #28FF71;top: 0;}
-.FireJob_Positions_button button.Post:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #E573B8;top: 0;}
-.FireJob_Positions_button button.Production:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #A7BAC5;top: 0;}
-.FireJob_Positions_button button.Department:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #FFF386;top: 0;}
-.FireJob_Positions_button button.Keeley:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #86D3FF;top: 0; }
-.FireJob_Positions_button button.Properties:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #B373E5;top: 0;}
-.FireJob_Positions_button button.Fire:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #E52222;top: 0;}
-.FireJob_Positions_button button.Resources:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #EAEE13;top: 0;}
-.FireJob_Positions_button button.Information:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #6C5F7C;top: 0;}
-.FireJob_Positions_button button.Operations:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #470CF0;top: 0;}
-.FireJob_Positions_button button.Sales:before{content: "";width: 6px;height: 100%;position: absolute;left: 0;background: #C71B82;top: 0;}
-
-.dropdown2.active{position: relative;z-index: 8}
-
-.dropdown3.active{position: relative;z-index: 7}
-
-.dropdown.active{position: relative;z-index: 9}
-@media(min-width:1200px) and (max-width:1399px){
-
-    header .navbar-nav li a{margin: 4px 30px 0 0;}
-    .FireJob_glightbox_dta h3{
-        min-height: 90px;
-    }
-}
-
-@media(min-width:992px) and (max-width:1199px){
-
-    header .navbar-nav li a{     margin: 0 8px;
-    font-size: 13px;}
-    .FireJob_banner h1{ font-size:150px }
-    .FireJob_best h2{ font-size:60px }
-    .FireJob_video h2{ font-size:45px }
-    .FireJob_Channels h3{ font-size:35px }
-    .FireJob_Positions h2, .FireJob_Trailblazers h2, .FireJob_Perks h2, .FireJob_Pillars_section h3{ font-size:30px }
-    .FireJob_glightbox_img{ width:50px }
-     .FireJob_glightbox_img img{ width:40px }
-     .FireJob_glightbox_dta {
-    float: left;
-    width: calc(100% - 50px);
-}
-.FireJob_glightbox_dta h3{
-        font-size: 16px;
-    line-height: 23px;
-}
-.FireJob_Positions_button button{ font-size:14px }
-.FireJob_glightbox_low span{ font-size:16px }
-.FireJob_glightbox_low a{ width:130px; font-size: 14px; }
-.FireJob_col h4{
-        font-size: 16px;
-    line-height: 23px;
-    text-align: center;
-}
-.FireJob_col span {
-    width: 67px;
-    height: 106px;
-    display: inline-block;
-}
-.FireJob_Pillars_section h2{
-        font-size: 33px;
-    line-height: 58px;padding: 60px 50px;
-}
-.FireJob_Great {
-    padding: 20px 15px;
-}
-.FireJob_Great h4{
-    font-size: 20px;
-}
-.FireJob_Great ul li{ font-size:14px }
-}
-
-@media(min-width:768px) and (max-width:991px){
-
-    header .navbar-nav li a{     margin: 0 8px;
-    font-size: 13px;}
-    .FireJob_banner h1{font-size: 100px;}
-    .FireJob_best h2{font-size: 44px;}
-    .FireJob_video h2{font-size: 39px;line-height: 34px;}
-    .FireJob_Channels h3{font-size: 25px;line-height: 30px;}
-    .FireJob_Positions h2, .FireJob_Trailblazers h2, .FireJob_Perks h2, .FireJob_Pillars_section h3{ font-size:30px }
-    .FireJob_glightbox_img{ width:50px }
-     .FireJob_glightbox_img img{ width:40px }
-     .FireJob_glightbox_dta {
-    float: left;
-    width: calc(100% - 50px);
-}
-.FireJob_glightbox_dta h3{
-        font-size: 16px;
-    line-height: 23px;
-}
-.FireJob_Positions_button button{ font-size:14px }
-.FireJob_glightbox_low span{ font-size:16px }
-.FireJob_glightbox_low a{ width:130px; font-size: 14px; }
-.FireJob_col h4{
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-}
-.FireJob_col span {
-    width: 67px;
-    height: 106px;
-    display: inline-block;
-}
-.FireJob_Pillars_section h2{
-        font-size: 27px;
-        line-height: 54px;
-        padding: 60px 50px;
-}
-.FireJob_Great {
-    padding: 20px 15px;
-}
-.FireJob_Great h4{
-    font-size: 26px;
-}
-.FireJob_Great ul li{font-size: 16px;}
-footer h3{margin-top: 30px}
-.navbar-brand{    width: 120px;
-    padding: 0; }
-    header .navbar-nav li a {
-    margin: 0 4px;
-    font-size: 12px;
-}
-.FireJob_search button{    font-size: 21px;}
-.FireJob_video p{font-size: 16px;line-height: 22px;}
-.FireJob_Channels span{ font-size:17px }
-.FireJob_Trailblazers p{
-    margin-bottom: 40px;
-}
-footer{text-align: center;}
-    .FireJob_footer-text p{ padding:0 }
-    .FireJob_Main{ background-size: cover; }
-}
-
-@media(min-width:200px) and (max-width:767px){
-    .FireJob_home-header{    position: absolute;
-    top: 15px;
-    width: 90%;
-    left: 0;
-    z-index: 999;
-    right: 0;
-    margin: 0 auto;}
-.FireJob_Main{ background-size: cover; }
-    .FireJob_footer-text p{ padding:0 }
-    footer, .FireJob_Trailblazers h2, .FireJob_Trailblazers p{text-align: center;}
-.navbar-toggler{background:url(../images/menu.png);background-repeat: no-repeat;background-size: 42px;width: 44px;height: 44px;}
-    header .navbar-nav li a{     margin: 0 8px;
-    font-size: 13px;}
-    .FireJob_banner h1{font-size: 68px;margin: 120px 0 20px;display: inline-block;width: 100%;}
-    .FireJob_best h2{font-size: 44px;padding: 50px 0;}
-    .FireJob_video h2{font-size: 39px;line-height: 34px;margin: 40px 0 10px;text-align: center;}
-    .FireJob_Channels h3{font-size: 31px;line-height: 30px;}
-    .FireJob_Positions h2, .FireJob_Trailblazers h2, .FireJob_Perks h2, .FireJob_Pillars_section h3{ font-size:30px }
-    .FireJob_glightbox_img{width: 100%;}
-     .FireJob_glightbox_img img{ width:40px }
-     .FireJob_glightbox_dta {
-    float: left;
-    width: 100%;
-}
-.FireJob_glightbox_dta h3{
-        font-size: 16px;
-    line-height: 23px;
-}
-.FireJob_Positions_button button{ font-size:14px }
-.FireJob_glightbox_low span{ font-size:16px }
-.FireJob_glightbox_low a{ width:130px; font-size: 14px; }
-.FireJob_col h4{
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-}
-.FireJob_col span {
-    width: 67px;
-    height: 106px;
-    display: inline-block;
-}
-.FireJob_Pillars_section h2{
-        font-size: 26px;
-        line-height: 42px;
-        padding: 50px 0;
-}
-.FireJob_Great {
-    padding: 20px 15px;
-}
-.FireJob_Great h4{
-    font-size: 26px;
-}
-.FireJob_Great ul li{font-size: 16px;}
-footer h3{margin-top: 30px}
-.navbar-brand{
-    width: 200px;
-    padding: 8px;
-    }
-    header .navbar-nav li a {
-    margin: 3px 4px;
-    font-size: 17px;
-}
-.FireJob_search button{font-size: 19px;width: auto;padding: 1px 25px;height: auto;}
-.FireJob_video p{font-size: 16px;line-height: 22px;text-align: center;}
-.FireJob_Channels span{ font-size:17px }
-.FireJob_Trailblazers p{
-    margin-bottom: 40px;
-} 
-.FireJob_Channels{ margin:20px 0 }
-.FireJob_brand{margin:50px 0;background-size: cover;overflow: hidden;border-radius: 40px;}
-.FireJob_Perks{ padding:50px 0 }
-.FireJob_select{margin: 10px 0}
-}
-
-@media(min-width:571px) and (max-width:767px){
-.FireJob_glightbox_low a{
-    float: left;
-    }
-
-}
-
-
-

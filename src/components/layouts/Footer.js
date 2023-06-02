@@ -17,12 +17,12 @@ export default function Footer() {
                         <div className="FireJob_footer-nav">
                             <h3>QUICK LINKS</h3>
                             <ul>
-                                <li><a href="">Who We Are</a></li>
-                                <li><a href="">By The Numbers</a></li>
-                                <li><a href="">Open Positions</a></li>
-                                <li><a href="">Trailblazers</a></li>
-                                <li><a href="">Perks</a></li>
-                                <li><a href="">Pillars</a></li>
+                                <li><a href="#whoare">Who We Are</a></li>
+                                <li><a href="#Numbers">By The Numbers</a></li>
+                                <li><a href="#sPositions">Open Positions</a></li>
+                                <li><a href="#Trailblazers">Trailblazers</a></li>
+                                <li><a href="#Firejob_Perks">Perks</a></li>
+                                <li><a href="#Firejob_Pillars">Pillars</a></li>
                             </ul>
                         </div>
                     </div>

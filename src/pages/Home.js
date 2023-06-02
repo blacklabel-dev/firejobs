@@ -3,6 +3,8 @@ import Header from "../components/layouts/Header"
 import JobCard from "../components/home/JobCard"
 import { callGetApi } from "../utils/api/api"
 import { Teams } from "../utils/var/teams"
+import { Departments } from "../utils/var/departments"
+import { Modal } from "antd"
 
 export default function Home() {
     const [departments, setDepartments] = useState([])
@@ -10,9 +12,10 @@ export default function Home() {
     const [types, setTypes] = useState([])
     const [jobs, setJobs] = useState([])
     const [countedDepartments, setCountedDepartments] = useState([])
+    const [selectedBio, setSelectedBio] = useState(undefined)
     const [formData, setFormData] = useState({
         status: {
-            id: "",
+            id: "open",
             name: "All Roles"
         },
         department: {
@@ -139,25 +142,12 @@ export default function Home() {
                                                         setFormData({
                                                             ...formData,
                                                             status: {
-                                                                id: "", 
+                                                                id: "open", 
                                                                 name: "All Roles"
                                                             }
                                                         })
                                                     }
                                                 >All Roles</li>
-                                                <li
-                                                    key="2"
-                                                    value="open"
-                                                    onClick={() => 
-                                                        setFormData({
-                                                            ...formData,
-                                                            status: {
-                                                                id: "open", 
-                                                                name: "All Open Jobs"
-                                                            }
-                                                        })
-                                                    }
-                                                >All Open Jobs</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -238,9 +228,7 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-6">
                                 <div className="FireJob_video_box">
-                                    <video poster="images/video.png">
-                                        <source src=" #" type="video/mp4" />
-                                    </video>
+                                    <img src="images/who_we_are.jpg" />
                                 </div>
                             </div>
                             <div className="col-md-6">
@@ -285,7 +273,8 @@ export default function Home() {
                             <div className="FireJob_Positions_button" id="myBtnContainer">
                                 {countedDepartments && countedDepartments.length > 0 &&
                                     countedDepartments.map((el) => (
-                                        <button key={el.id} className="btn Gaming" 
+                                        <button key={el.id} className="btn" 
+                                            style={{ borderLeft: `5px solid ${Departments.filter((el2) => el2.id == el.id)[0].color}` }} 
                                             onClick={() => 
                                                 setFormData({
                                                     ...formData,
@@ -317,8 +306,7 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-lg-3">
                                 <h2>Trailblazers</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra viverra at in enim risus pharetra praesent.
-                                    Scelerisque facilisis aliquam amet eu sed. Non id sit turpis massa convallis odio. </p>
+                                <p>To make trailblazing content we look to hire the brightest and most creative people in the industry who like to have fun and be weird!</p>
                             </div>
                             <div className="col-lg-9">
                                 <div className="owl-carousel">
@@ -328,11 +316,11 @@ export default function Home() {
                                                 <div className="FireJob_item_img"><img src={el.image} /></div>
                                                 <div className="FireJob_item_data">
                                                     <h3>{el.name}</h3>
-                                                    <h4><span>{el.years_of_service}</span> Year</h4>
-                                                    <ul>
-                                                        <li>Super power: <label>Controlling Elements</label></li>
-                                                        <li>Trophy: <label>Over Achiever</label></li>
-                                                    </ul>
+                                                    <h5>{el.role}</h5>
+                                                    <h4>Start Date:<span>{el.start_date}</span></h4>
+                                                    <h4>Years of Service:<span>{el.years_of_service}</span></h4>
+                                                    <h4>Favorite Pizza Topping:<span>{el.favorite_pizza_topping}</span></h4>
+                                                    <button onClick={() => setSelectedBio(el)}>READ BIO</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -457,6 +445,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            {selectedBio &&
+                <Modal open={true} onCancel={() => setSelectedBio(undefined)} footer={null} className="bio-modal">
+                    <h3>{selectedBio.name}</h3>
+                    <h5>{selectedBio.role}</h5>
+                    <p>{selectedBio.bio}</p>
+                </Modal>
+            }
         </>
     )
 }
