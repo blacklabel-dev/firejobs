@@ -1550,6 +1550,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          padding: 50px 0;
      }
 
+     .FireJob_video_box {
+        width: 100%;
+     }
+
      .FireJob_video h2 {
          font-size: 39px;
          line-height: 34px;
