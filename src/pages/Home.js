@@ -73,7 +73,8 @@ export default function Home() {
     }
 
     const onGetJobs = (res) => {
-        setJobs(res)
+        setJobs(res.filter((el) => el.name.indexOf("Template") < 0 && el.name.indexOf("TEMPLATE") < 0 && el.name.indexOf("template") < 0))
+        console.log(res.filter((el) => el.name.indexOf("Template") < 0))
     }
 
     const onFailedGetJobs = (res) => {
