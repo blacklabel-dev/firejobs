@@ -11,8 +11,8 @@ export default function JobCard({ job }) {
                 <div className="FireJob_glightbox_dta">
                     <h3>{job.name}</h3>
                     <ul>
-                        <li><img src="images/Ellips.png" />{job.custom_fields.employment_type}</li>
-                        <li><img src="images/Frame.png" /> {job.offices.map((el, index) => (index == (job.offices.length - 1) ? el.name : `${el.name}, `))}</li>
+                        <li><img src="images/Ellips.png" />&nbsp;{job.custom_fields.employment_type}</li>
+                        <li><img src="images/Frame.png" />&nbsp;{job.offices.map((el, index) => (index == (job.offices.length - 1) ? el.name : `${el.name}, `))}</li>
                     </ul>
                 </div>
             </div>

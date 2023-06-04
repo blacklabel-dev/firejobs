@@ -272,7 +272,7 @@ export default function Home() {
                             <h2>Open Positions</h2>
                             <div className="FireJob_Positions_button" id="myBtnContainer">
                                 {countedDepartments && countedDepartments.length > 0 &&
-                                    countedDepartments.map((el) => (
+                                    countedDepartments.filter((el) => el.job_count != 0).map((el) => (
                                         <button key={el.id} className="btn" 
                                             style={{ borderLeft: `5px solid ${Departments.filter((el2) => el2.id == el.id)[0].color}` }} 
                                             onClick={() => 
