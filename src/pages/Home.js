@@ -74,11 +74,10 @@ export default function Home() {
 
     const onGetJobs = (res) => {
         setJobs(res.filter((el) => el.name.indexOf("Template") < 0 && el.name.indexOf("TEMPLATE") < 0 && el.name.indexOf("template") < 0))
-        console.log(res.filter((el) => el.name.indexOf("Template") < 0))
     }
 
     const onFailedGetJobs = (res) => {
-
+        console.log(res)
     }
 
     const getJobs = (status, department_id, custom_field_option_id, office_id) => {
@@ -312,7 +311,7 @@ export default function Home() {
                             <div className="col-lg-9">
                                 <div className="owl-carousel">
                                     {Teams.map((el) => (
-                                        <div className="item">
+                                        <div className="item" key={el.id}>
                                             <div className="FireJob_item">
                                                 <div className="FireJob_item_img"><img src={el.image} /></div>
                                                 <div className="FireJob_item_data">
