@@ -17,8 +17,8 @@ export default function JobCard({ job }) {
                 </div>
             </div>
             <div className="FireJob_glightbox_low">
-                {/* <span>$150K+/yr</span> */}
-                <a href="">Apply Now</a>
+                {job.custom_fields.salary && (<span>${job.custom_fields.salary}K+/yr</span>)}
+                {job.custom_fields.apply_url && (<a href={job.custom_fields.apply_url} target="_blank">Apply Now</a>)}
             </div>
         </div>
     )
