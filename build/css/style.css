@@ -36,6 +36,7 @@ font-family: 'x-heightingregular';
  }
 
  body {
+     max-width: 10240px;
      margin: 0 auto;
      font-family: 'Inter', sans-serif;
      color: #000;
