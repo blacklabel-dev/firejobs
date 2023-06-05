@@ -36,7 +36,7 @@ font-family: 'x-heightingregular';
  }
 
  body {
-     max-width: 1920px;
+     max-width: 2560px;
      margin: 0 auto;
      font-family: 'Inter', sans-serif;
      color: #000;
@@ -358,9 +358,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_search {
      text-align: center;
+     margin-top: 35px;
  }
 
- .FireJob_search button {
+ .FireJob_search a {
      background: #F34535;
      border-radius: 12px;
      border: 0;
@@ -372,6 +373,8 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      height: 61px;
      margin: 35px 0 0;
      font-family: 'x-heightingregular';
+     padding: 17px 39px;
+     text-decoration: unset;
  }
 
  .FireJob_best {}

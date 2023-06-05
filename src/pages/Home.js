@@ -209,7 +209,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-sm-12">
                                     <div className="FireJob_search">
-                                        <button onClick={onClickSearchJobs}>SEARCH JOBS</button>
+                                        <a onClick={onClickSearchJobs} href="#sPositions">SEARCH JOBS</a>
                                     </div>
                                 </div>
                                 <div className="col-sm-12">
@@ -240,7 +240,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="FireJob_star" id="Numbers">
+                <div className="FireJob_star" id="BrandStats">
                     <div className="container">
                         <div className="FireJob_brand">
                             <h2>BRAND STATS</h2>
@@ -369,16 +369,14 @@ export default function Home() {
                                     <div className="FireJob_col">
                                         <span><img src="images/Perks5.png" />
                                         </span>
-                                        <h4>Company paid
-                                            holidays </h4>
+                                        <h4>Company paid holidays </h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-3  d-flex align-items-stretch">
                                     <div className="FireJob_col">
                                         <span><img src="images/Perks6.png" />
                                         </span>
-                                        <h4>Paid Parental
-                                            Leave </h4>
+                                        <h4>Paid Parental Leave </h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-3  d-flex align-items-stretch">
@@ -413,7 +411,7 @@ export default function Home() {
                                         <ul>
                                             <li>Innovate & Replicate</li>
                                             <li>Challenge Your Best</li>
-                                            <li>Quality Work &gt; Time Soent</li>
+                                            <li>Quality Work &gt; Time Spent</li>
                                             <li>Seek Criticism & Radical Candor</li>
                                         </ul>
                                     </div>
@@ -422,10 +420,10 @@ export default function Home() {
                                     <div className="FireJob_Great">
                                         <h4>Fuel Excitement</h4>
                                         <ul>
-                                            <li>Charitable initiatives</li>
+                                            <li>Charitable Initiatives</li>
                                             <li>Recognize Wins </li>
                                             <li>Have Fun, Be Weird</li>
-                                            <li>Listen with empathy</li>
+                                            <li>Listen With Empathy</li>
                                         </ul>
                                     </div>
                                 </div>

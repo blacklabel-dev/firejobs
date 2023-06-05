@@ -13,26 +13,16 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-lg-4">
                         <div className="FireJob_footer-nav">
                             <h3>QUICK LINKS</h3>
                             <ul>
                                 <li><a href="#whoare">Who We Are</a></li>
-                                <li><a href="#Numbers">By The Numbers</a></li>
+                                <li><a href="#BrandStats">Brand Stats</a></li>
                                 <li><a href="#sPositions">Open Positions</a></li>
                                 <li><a href="#Trailblazers">Trailblazers</a></li>
-                                <li><a href="#Firejob_Perks">Perks</a></li>
+                                <li><a href="#FireJob_Perks">Perks</a></li>
                                 <li><a href="#Firejob_Pillars">Pillars</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-2">
-                        <div className="FireJob_footer-nav">
-                            <h3>LEGAL</h3>
-                            <ul>
-                                <li><a href="">TAB</a></li>
-                                <li><a href="">TAB</a></li>
-                                <li><a href="">TAB</a></li>
                             </ul>
                         </div>
                     </div>
@@ -40,9 +30,9 @@ export default function Footer() {
                         <div className="FireJob_footer-social">
                             <h3>CONNECT</h3>
                             <ul>
-                                <li><a href=""><img src="images/twt.png" /></a></li>
-                                <li><a href=""><img src="images/in.png" /></a></li>
-                                <li><a href=""><img src="images/yt.png" /></a></li>
+                                <li><a href="https://twitter.com/preston?lang=en" target="_blank"><img src="images/twt.png" /></a></li>
+                                <li><a href="https://www.instagram.com/prestonplayz/?hl=en" target="_blank"><img src="images/in.png" /></a></li>
+                                <li><a href="https://www.youtube.com/@PrestonYT" target="_blank"><img src="images/yt.png" /></a></li>
                             </ul>
                         </div>
                     </div>

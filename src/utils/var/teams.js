@@ -80,7 +80,7 @@ export const Teams = [
         trophy: "",
         role: "Lead Editor",
         start_date: "10/28/2019",
-        bio: "",
+        bio: "The edit-bay throwing me an impromptu bachelor party is up there, along with my bosses and co-workers going to my wedding would be among my fondest memories at TBNR.",
         favorite_pizza_topping: ""
     },
     {
