@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "https://firejobs.gg/static/js/main.27f8aeab.js",
-    "static/js/787.26c767c0.chunk.js": "https://firejobs.gg/static/js/787.26c767c0.chunk.js",
-    "index.html": "https://firejobs.gg/index.html",
-    "main.27f8aeab.js.map": "https://firejobs.gg/static/js/main.27f8aeab.js.map",
-    "787.26c767c0.chunk.js.map": "https://firejobs.gg/static/js/787.26c767c0.chunk.js.map"
+    "main.js": "https://greenhouse.firejobs.gg/static/js/main.636a0d10.js",
+    "static/js/787.26c767c0.chunk.js": "https://greenhouse.firejobs.gg/static/js/787.26c767c0.chunk.js",
+    "index.html": "https://greenhouse.firejobs.gg/index.html",
+    "main.636a0d10.js.map": "https://greenhouse.firejobs.gg/static/js/main.636a0d10.js.map",
+    "787.26c767c0.chunk.js.map": "https://greenhouse.firejobs.gg/static/js/787.26c767c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.27f8aeab.js"
+    "static/js/main.636a0d10.js"
   ]
 }
