@@ -17,7 +17,7 @@ export default function JobCard({ job }) {
                 </div>
             </div>
             <div className="FireJob_glightbox_low">
-                <span>$150K+/yr</span>
+                {/* <span>$150K+/yr</span> */}
                 <a href="">Apply Now</a>
             </div>
         </div>
