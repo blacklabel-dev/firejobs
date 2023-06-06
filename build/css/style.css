@@ -56,9 +56,9 @@ font-family: 'x-heightingregular';
      background: url(../images/banner.png) #F88F22;
      display: inline-block;
      width: 100%;
-     background-size: cover;
+     background-size: contain;
      background-position: center bottom;;
-     background-repeat: no-repeat;
+     background-repeat: repeat;
  }
 
  .FireJob_home-header {
@@ -399,6 +399,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      display: inline-block;
      width: 100%;
      position: relative;
+     margin-top: -5px;
  }
 
  .FireJob_body:before {
