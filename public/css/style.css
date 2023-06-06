@@ -57,7 +57,7 @@ font-family: 'x-heightingregular';
      display: inline-block;
      width: 100%;
      background-size: cover;
-     background-position: center;
+     background-position: center bottom;;
      background-repeat: no-repeat;
  }
 
@@ -1281,15 +1281,6 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  .dropdown.active {
      position: relative;
      z-index: 9
- }
-
- @media (min-width: 1921px) {
-
-    .FireJob_Main {
-        background-size: contain;
-        background-repeat: repeat;
-    }
-    
  }
 
  @media(min-width:1200px) and (max-width:1399px) {
