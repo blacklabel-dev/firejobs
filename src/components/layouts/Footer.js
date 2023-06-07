@@ -30,9 +30,8 @@ export default function Footer() {
                         <div className="FireJob_footer-social">
                             <h3>CONNECT</h3>
                             <ul>
-                                <li><a href="https://twitter.com/preston?lang=en" target="_blank"><img src="images/twt.png" /></a></li>
-                                <li><a href="https://www.instagram.com/prestonplayz/?hl=en" target="_blank"><img src="images/in.png" /></a></li>
-                                <li><a href="https://www.youtube.com/@PrestonYT" target="_blank"><img src="images/yt.png" /></a></li>
+                                <li><a href="mailto:apply@firejobs.gg"><img src="images/email.png" /></a></li>
+                                <li><a href="https://www.linkedin.com/company/tbnrproductions/" target="_blank"><img className="linkedImg" src="images/linked_in.png" /></a></li>
                             </ul>
                         </div>
                     </div>
