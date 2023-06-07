@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="To make the best content, you need the best people. By joining TBNR, you will be among the brightest, the most creative, and most talented people in the industry! Through collaboration, support, and a clear vision, our team is empowered to Fuel Excitement, Ignite Transformation, and Go Beyond Great every day!"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Fire Jobs</title>
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/fonts/stylesheet.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css">
+
+    <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/js/owl.carousel.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      $(document).ready(function () {
+  
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          dots: false,
+          enter: true,
+          autoplay: true,
+          center: true,
+  
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+  
+            },
+  
+            768: {
+              items: 2,
+              nav: false,
+              center: false,
+            },
+            1200: {
+              items: 3,
+              margin: 10,
+              nav: false,
+            }
+          }
+        });
+  
+      })
+    </script>
+  
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+  
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+      }
+  
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+  
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    $('.FireJob_select').click(function () {
+      $('.dropdown').toggleClass('active');
+    });
+    $('.dropdown-list li').click(function () {
+      $('.select-label').text($(this).text());
+    });
+    $('.FireJob_select2').click(function () {
+      $('.dropdown2').toggleClass('active');
+    });
+    $('.dropdown-list2 li').click(function () {
+      $('.select-label2').text($(this).text());
+    });
+    $('.FireJob_select3').click(function () {
+      $('.dropdown3').toggleClass('active');
+    });
+    $('.dropdown-list3 li').click(function () {
+      $('.select-label3').text($(this).text());
+    });
+  });
+
+</script>
