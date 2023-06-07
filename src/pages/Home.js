@@ -3,13 +3,10 @@ import Header from "../components/layouts/Header"
 import JobCard from "../components/home/JobCard"
 import { callGetApi } from "../utils/api/api"
 import { Teams } from "../utils/var/teams"
-import { Departments } from "../utils/var/departments"
 import { Modal } from "antd"
 
 export default function Home() {
     const [departments, setDepartments] = useState([])
-    const [offices, setOffices] = useState([])
-    const [types, setTypes] = useState([])
     const [jobs, setJobs] = useState([])
     const [countedDepartments, setCountedDepartments] = useState([])
     const [selectedBio, setSelectedBio] = useState(undefined)
@@ -22,27 +19,7 @@ export default function Home() {
             id: "",
             name: ""
         },
-        custom_field_option: {
-            id: "",
-            name: "Type"
-        },
-        office: {
-            id: "",
-            name: "Location"
-        }
     })
-
-    const onGetOffices = (res) => {
-        setOffices(res)
-    }
-
-    const onFailedGetOffices = (res) => {
-        console.log(res)
-    }
-
-    const getOffices = () => {
-        callGetApi("offices", onGetOffices, onFailedGetOffices)
-    }
 
     const onGetDepartments = (res) => {
         setDepartments(res)
@@ -56,22 +33,6 @@ export default function Home() {
         callGetApi("departments", onGetDepartments, onFailedGetDepartments)
     }
 
-    const onGetTypes = (res) => {
-        if (res && res.length > 0 && res[0].custom_field_options && res[0].custom_field_options.length > 0) {
-            setTypes(res[0].custom_field_options)
-        } else {
-            setTypes([])
-        }
-    }
-
-    const onFailedGetTypes = (res) => {
-        console.log(res)
-    }
-
-    const getTypes = () => {
-        callGetApi("types", onGetTypes, onFailedGetTypes)
-    }
-
     const onGetJobs = (res) => {
         setJobs(res.filter((el) => el.name.indexOf("Template") < 0 && el.name.indexOf("TEMPLATE") < 0 && el.name.indexOf("template") < 0))
     }
@@ -80,31 +41,27 @@ export default function Home() {
         console.log(res)
     }
 
-    const getJobs = (status, department_id, custom_field_option_id, office_id) => {
-        const query = `status=${status}&department_id=${department_id}&custom_field_option_id=${custom_field_option_id}&office_id=${office_id}`
+    const getJobs = (status, department_id) => {
+        const query = `status=${status}&department_id=${department_id}`
         callGetApi(`jobs?${query}`, onGetJobs, onFailedGetJobs)
-    }
-
-    const onClickSearchJobs = () => {
-        getJobs(formData.status.id, formData.department.id, formData.custom_field_option.id, formData.office.id)
     }
 
     useEffect(() => {
         if (departments.length > 0 && jobs.length > 0) {
             const countedDepartments0 = [
+                {
+                    id: "",
+                    name: "All",
+                    job_count: jobs.length,
+                    jobs: jobs
+                },
                 ...departments.map((el) => ({
                     ...el,
                     job_count: jobs.filter((el2) => el.id == el2.departments[0].id).length,
                     jobs: [
                         ...jobs.filter((el2) => el.id == el2.departments[0].id)
                     ]
-                })),
-                {
-                    id: "",
-                    name: "Show all",
-                    job_count: jobs.length,
-                    jobs: jobs
-                }
+                }))
             ];
     
             setCountedDepartments(countedDepartments0)
@@ -115,9 +72,7 @@ export default function Home() {
 
     useEffect(() => {
         getDepartments()
-        getTypes()
-        getOffices()
-        getJobs(formData.status.id, formData.department.id, formData.custom_field_option.id, formData.office.id)
+        getJobs(formData.status.id, formData.department.id)
     }, [])
 
     return (
@@ -129,88 +84,6 @@ export default function Home() {
                         <h1>Fire Jobs</h1>
                         <div className="FireJob_banner_form">
                             <div className="row">
-                                <div className="col-md-4">
-                                    <div className="FireJob_select">
-                                        <div className="dropdown">
-                                            <span className="select-label">{formData.status.name}</span>
-                                            <input type="hidden" name="cd-dropdown" />
-                                            <ul className="dropdown-list">
-                                                <li
-                                                    key="1"
-                                                    value=""
-                                                    onClick={() => 
-                                                        setFormData({
-                                                            ...formData,
-                                                            status: {
-                                                                id: "open", 
-                                                                name: "All Roles"
-                                                            }
-                                                        })
-                                                    }
-                                                >All Roles</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="FireJob_select2">
-                                        <div className="dropdown2">
-                                            <span className="select-label2">{formData.custom_field_option.name}</span>
-                                            <input type="hidden" name="cd-dropdown" />
-                                            <ul className="dropdown-list2">
-                                                {types && types.length > 0 &&
-                                                    types.map((el) => (
-                                                        <li
-                                                            key={el.id}
-                                                            value={el.id}
-                                                            onClick={() => 
-                                                                setFormData({
-                                                                    ...formData,
-                                                                    custom_field_option: {
-                                                                        id: el.id, 
-                                                                        name: el.name
-                                                                    }
-                                                                })
-                                                            }
-                                                        >{el.name}</li>
-                                                    ))
-                                                }
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="FireJob_select3">
-                                        <div className="dropdown3">
-                                            <span className="select-label3">{formData.office.name}</span>
-                                            <input type="hidden" name="cd-dropdown" />
-                                            <ul className="dropdown-list3">
-                                                {offices && offices.length > 0 &&
-                                                    offices.map((el) => (
-                                                        <li
-                                                            key={el.id}
-                                                            value={el.id}
-                                                            onClick={() => 
-                                                                setFormData({
-                                                                    ...formData,
-                                                                    office: {
-                                                                        id: el.id, 
-                                                                        name: el.name
-                                                                    }
-                                                                })
-                                                            }
-                                                        >{el.name}</li>
-                                                    ))
-                                                }
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-12">
-                                    <div className="FireJob_search">
-                                        <a onClick={onClickSearchJobs} href="#sPositions">SEARCH JOBS</a>
-                                    </div>
-                                </div>
                                 <div className="col-sm-12">
                                     <div className="FireJob_best">
                                         <h2>The Best Never Rest</h2>

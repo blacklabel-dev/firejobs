@@ -56,10 +56,18 @@ font-family: 'x-heightingregular';
      background: url(../images/banner.png) #F88F22;
      display: inline-block;
      width: 100%;
-     background-size: contain;
-     background-position: center bottom;;
-     background-repeat: repeat;
+     background-size: cover;
+     background-position: center bottom;
+     background-repeat: no-repeat;
  }
+
+ @media only screen and (min-width: 1921px) {
+    .FireJob_Main {
+     background-size: contain;
+        background-repeat: repeat;
+    }
+ }
+
 
  .FireJob_home-header {
      background: #190D1F;
@@ -182,11 +190,19 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_footer-social {}
 
- .FireJob_footer-social ul {}
+ .FireJob_footer-social ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100px;
+ }
 
  .FireJob_footer-social ul li {
      display: inline-block;
      padding: 0 8px 0 0;
+ }
+
+ .linkedImg {
+    margin-top: -5px;
  }
 
  /**************** Footer CLose ***********/
@@ -210,6 +226,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      -webkit-text-stroke-width: 1px;
      -webkit-text-stroke-color: white;
      margin: 50px 0;
+     margin: calc(50vh - 200px) 0 80px;
  }
 
  .FireJob_banner_form {}
@@ -384,7 +401,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
      text-transform: uppercase;
      text-align: center;
-     padding: 100px 0;
+     padding: 0 0 80px;
      font-size: 81px;
      font-family: 'Gotham-Bold';
  }
@@ -400,6 +417,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      width: 100%;
      position: relative;
      margin-top: -5px;
+     padding-top: 30px;
  }
 
  .FireJob_body:before {
