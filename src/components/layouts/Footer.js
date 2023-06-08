@@ -32,6 +32,7 @@ export default function Footer() {
                             <ul>
                                 <li><a href="mailto:apply@firejobs.gg"><img src="images/email.png" /></a></li>
                                 <li><a href="https://www.linkedin.com/company/tbnrproductions/" target="_blank"><img className="linkedImg" src="images/linked_in.png" /></a></li>
+                                <li><a href="https://www.youtube.com/@PrestonYT" target="_blank"><img className="youtubeImg" src="images/yt.png" /></a></li>
                             </ul>
                         </div>
                     </div>
