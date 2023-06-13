@@ -5,7 +5,7 @@ export default function Header() {
         <header className="FireJob_home-header">
             <nav className="navbar navbar-expand-md">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+                    <a className="navbar-brand" href="/"><img src="images/logo.png" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
