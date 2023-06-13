@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "https://firejobs.gg/static/js/main.4525d23b.js",
+    "main.js": "https://firejobs.gg/static/js/main.d3124858.js",
     "static/js/787.26c767c0.chunk.js": "https://firejobs.gg/static/js/787.26c767c0.chunk.js",
     "index.html": "https://firejobs.gg/index.html",
-    "main.4525d23b.js.map": "https://firejobs.gg/static/js/main.4525d23b.js.map",
+    "main.d3124858.js.map": "https://firejobs.gg/static/js/main.d3124858.js.map",
     "787.26c767c0.chunk.js.map": "https://firejobs.gg/static/js/787.26c767c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4525d23b.js"
+    "static/js/main.d3124858.js"
   ]
 }

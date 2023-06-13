@@ -101,7 +101,7 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-6">
                                 <div className="FireJob_video_box">
-                                    <img src="images/who_we_are.jpg" />
+                                    <img src="images/who_we_are.png" />
                                 </div>
                             </div>
                             <div className="col-md-6">
