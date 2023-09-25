@@ -18,7 +18,7 @@ export default function Footer() {
                             <h3>QUICK LINKS</h3>
                             <ul>
                                 <li><a href="#whoare">Who We Are</a></li>
-                                <li><a href="#BrandStats">Brand Stats</a></li>
+                                <li><a href="#BrandStats">Brand Initiatives</a></li>
                                 <li><a href="#sPositions">Open Positions</a></li>
                                 <li><a href="#Trailblazers">Trailblazers</a></li>
                                 <li><a href="#FireJob_Perks">Perks</a></li>

@@ -98,7 +98,7 @@ export default function Home() {
             <div className="FireJob_body">
                 <div className="FireJob_video" id="whoare">
                     <div className="container">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center mb-5">
                             <div className="col-md-6">
                                 <div className="FireJob_video_box">
                                     <img src="images/who_we_are.png" />
@@ -106,8 +106,19 @@ export default function Home() {
                             </div>
                             <div className="col-md-6">
                                 <h2>Who we are</h2>
-                                <p>TBNR is a top YouTube Production Company based in Dallas, Texas that manages the massive YouTube channels and digital media brands of Preston and Brianna Arsement, and Keeley Ellis. TBNR was founded by Preston in 2010 when he launched his first YouTube Channel, TBNRFrags. Shortly thereafter he launched PrestonPlayz which currently has over 14 million subscribers!</p>
-                                <p>Our 7 YouTube channels are focused on IRL, Gaming, and Reaction content. TBNR has an innate desire to spread positive messaging and cares deeply about the kind of content that we popularize with our videos.</p>
+                                <p>TBNR (<b>T</b>he <b>B</b>est <b>N</b>ever <b>R</b>est) was founded by the trailblazing Content Creator, Preston Arsement (known widely as PrestonPlayz) in 2012 with his first YouTube channel and has been growing nonstop ever since. As a result, in 2023 TBNR was approved by YouTube as the first Creator-owned MCN (multi channel network). Today, this MCN - “Fire MCN” - gets an average of 40 million views per day. In the past 18 months TBNR has evolved from an explicitly YouTube content production house to a global disruptor in social content and human communication. </p>
+                                <p>We at TBNR are a group of skilled <b>CREATORS</b> coming from a variety of backgrounds including content creation, music, theater, coding, architectural design, movie and television set construction, tech and VC startups, professional gaming, video game development, and beyond! </p>
+                            </div>
+                        </div>
+                        <div className="row align-items-center">
+                            <div className="col-md-6 order-md-2">
+                                <div className="FireJob_video_box">
+                                    <img src="images/who_we_are.png" />
+                                </div>
+                            </div>
+                            <div className="col-md-6 order-md-1">
+                                <p>We believe in <b>RADICAL CANDOR</b> which means honest and constructive feedback towards ourselves and others, even if it might be uncomfortable or critical. We foster an environment where open and honest feedback is not only accepted, but encouraged for our employees and leadership to achieve their highest potential. We believe challenging each other is the only way to be the <b>BEST</b>. </p>
+                                <p>TBNR has an innate desire to spread positive messaging and cares deeply about the kind of content and products that we popularize with our videos, merchandise, and game development. We are seeking passionate <b>CREATORS</b> with a love for human collaboration through supportive competition to join us in the <b>FIRE</b> movement revolution - we will not <b>REST</b> in our efforts to push the needle of humanity forward in a meaningfully, positive direction!</p>
                             </div>
                         </div>
                     </div>
@@ -115,24 +126,27 @@ export default function Home() {
                 <div className="FireJob_star" id="BrandStats">
                     <div className="container">
                         <div className="FireJob_brand">
-                            <h2>BRAND STATS</h2>
+                            <h2>BRAND INITIATIVES</h2>
                             <div className="row ">
-                                <div className="col-md-4">
-                                    <div className="FireJob_Channels">
-                                        <h3>7</h3>
-                                        <span>YouTube Channels</span>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/IRL-Creative.png" />
+                                        <span>fire games</span>
+                                        <p>The furnace where games get made. Fire Games is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Our games are meticulously designed to be not only enjoyable to play but also captivating to watch, ensuring a delightful experience for both creators and viewers alike. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games, alongside other exciting projects. Fire Games is where gaming seamlessly merges with content creation, offering endless possibilities and unmatched experiences.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
-                                    <div className="FireJob_Channels">
-                                        <h3>70 million+</h3>
-                                        <span>Subscribers</span>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/IRL-Creative.png" />
+                                        <span>fire data</span>
+                                        <p>The future of all influence. Fire Data is dedicated to revolutionizing the creator economy industry. Our mission is clear: to establish industry-standard practices through advanced analytics and insights, dismantling inefficiencies and gatekeepers, including agencies. We are fervently committed to promoting transparency and facilitating access to cutting-edge SaaS solutions. We are igniting a new era of empowerment and innovation within the creator economy.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
-                                    <div className="FireJob_Channels">
-                                        <h3>18 billion+</h3>
-                                        <span>Lifetime Views</span>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/IRL-Creative.png" />
+                                        <span>fire merch</span>
+                                        <p>Where style ignites. FireMerch represents our commitment to creativity, style, and quality that has fueled our growth and transformation! With a fusion of nostalgia and innovation, our designs not only tell a story, but also ensure the comfort and satisfaction of our valued community. </p>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +204,6 @@ export default function Home() {
                                                     <h3>{el.name}</h3>
                                                     <h5>{el.role}</h5>
                                                     <h4>Years of Service:<span>{el.years_of_service}</span></h4>
-                                                    <h4>Favorite Pizza Topping:<span>{el.favorite_pizza_topping}</span></h4>
                                                     <button onClick={() => setSelectedBio(el)}>Favorite Memory</button>
                                                 </div>
                                             </div>

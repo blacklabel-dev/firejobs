@@ -472,12 +472,11 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_brand {
-     background: url(../images/start.png);
      background-repeat: no-repeat;
      text-align: center;
      background-size: 100% 100%;
      padding: 50px 0;
-     margin: 100px 0;
+     margin: 50px 0;
  }
 
  .FireJob_brand h2 {
@@ -490,9 +489,22 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      margin-bottom: 30px;
  }
 
- .FireJob_Channels {}
+ .FireJob_Initiative {
+    background-color: #190D1F;
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
 
- .FireJob_Channels h3 {
+ .FireJob_Initiative img {
+    width: 60px;
+    margin-bottom: 30px;
+ }
+
+ .FireJob_Initiative h3 {
      font-size: 40px;
      line-height: 68px;
      text-align: center;
@@ -504,12 +516,19 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      font-family: 'x-heightingregular';
  }
 
- .FireJob_Channels span {
-     font-weight: 500;
+ .FireJob_Initiative span {
+     font-weight: 700;
      font-size: 20px;
      line-height: 28px;
      color: #FFFFFF;
      font-family: 'Raleway', sans-serif;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+ }
+
+ .FireJob_Initiative p {
+    color: #ffffff;
+    opacity: .65;
  }
 
  .filtering {
@@ -1306,6 +1325,12 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      z-index: 9
  }
 
+ @media (min-width: 1400px) {
+    .FireJob_Initiative img {
+        width: 80px;
+    }
+ }
+
  @media(min-width:1200px) and (max-width:1399px) {
 
      header .navbar-nav li a {
@@ -1336,7 +1361,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          font-size: 45px
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 35px
      }
 
@@ -1429,7 +1454,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          line-height: 34px;
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 25px;
          line-height: 30px;
      }
@@ -1525,7 +1550,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          line-height: 22px;
      }
 
-     .FireJob_Channels span {
+     .FireJob_Initiative span {
          font-size: 17px
      }
 
@@ -1607,7 +1632,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          text-align: center;
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 31px;
          line-height: 30px;
      }
@@ -1705,9 +1730,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          font-size: 16px;
          line-height: 22px;
          text-align: center;
+         margin-top: 30px;
      }
 
-     .FireJob_Channels span {
+     .FireJob_Initiative span {
          font-size: 17px
      }
 
@@ -1715,7 +1741,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          margin-bottom: 40px;
      }
 
-     .FireJob_Channels {
+     .FireJob_Initiative {
          margin: 20px 0
      }
 
