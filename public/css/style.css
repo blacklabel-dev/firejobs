@@ -285,7 +285,6 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .business-partner-feedback span b {
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     height: 100%;
@@ -932,7 +931,6 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_item {
-     background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
      border-radius: 16px;
      overflow: hidden;
  }

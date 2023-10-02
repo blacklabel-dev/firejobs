@@ -204,6 +204,8 @@ export default function Home() {
                                                     <h3>{el.name}</h3>
                                                     {/* <h5>{el.role}</h5> */}
                                                     {/* <h4>Years of Service:<span>{el.years_of_service}</span></h4> */}
+                                                    <h5>What excites you?</h5>
+                                                    <p>{el.a1}</p>
                                                     <button onClick={() => setSelectedBio(el)}>Read More</button>
                                                 </div>
                                             </div>
@@ -330,12 +332,10 @@ export default function Home() {
             {selectedBio &&
                 <Modal open={true} onCancel={() => setSelectedBio(undefined)} footer={null} className="bio-modal">
                     <h3>{selectedBio.name}</h3>
-                    <h5>What excites you?</h5>
-                    <p>{selectedBio.a1}</p>
                     <h5>What are you passionate about?</h5>
-                    <p>{selectedBio.a1}</p>
+                    <p>{selectedBio.a2}</p>
                     <h5>What are you most proud of during your time at TBNR?</h5>
-                    <p>{selectedBio.a1}</p>
+                    <p>{selectedBio.a3}</p>
                 </Modal>
             }
         </>
