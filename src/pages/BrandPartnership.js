@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 
 const opts = {
     height: '390',
-    width: '640',
+    width: '100%',
     playerVars: {
       autoplay: 0,
     },
@@ -24,7 +24,7 @@ export default function BrandPartnership() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <div className="FireJob_best">
-                                        <h2>Brand<br />Partnerships</h2>
+                                        <h2>Brand<br />Integrations</h2>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ export default function BrandPartnership() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="FireJob_video_box">
-                                        <img src="images/zuru_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("https://youtu.be/zVdz_f28oLo")} />
+                                        <img src="images/zuru_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("zVdz_f28oLo?si=gj4bWZgjH5oC6JHU")} />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -58,7 +58,7 @@ export default function BrandPartnership() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 order-lg-2">
                                     <div className="FireJob_video_box">
-                                        <img src="images/air_up_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("https://youtu.be/PqvSJ4t_Bic")} />
+                                        <img src="images/air_up_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("PqvSJ4t_Bic?si=Igfyj-XY9Qxtbw6L")} />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 order-lg-1">
@@ -76,7 +76,7 @@ export default function BrandPartnership() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="FireJob_video_box">
-                                        <img src="images/2k_drive_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("https://youtu.be/pyigFiovec4%5C")} />
+                                        <img src="images/2k_drive_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("pyigFiovec4?si=5vjHskNV2ui_eqQJ")} />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -94,7 +94,7 @@ export default function BrandPartnership() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 order-lg-2">
                                     <div className="FireJob_video_box">
-                                        <img src="images/game_stop_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("https://youtu.be/-jIl21f_IkQ")} />
+                                        <img src="images/game_stop_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("-jIl21f_IkQ?si=C2JKvvZMVnd3ivwq")} />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 order-lg-1">
@@ -112,7 +112,7 @@ export default function BrandPartnership() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="FireJob_video_box">
-                                        <img src="images/google_play_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("https://www.youtube.com/watch?v=FvqoE3nmQyw")} />
+                                        <img src="images/google_play_video.png" className="video-thumb-img" onClick={() => setSelectedVideo("FvqoE3nmQyw?si=8bBO7Yur3gKO8YKl")} />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
@@ -155,7 +155,7 @@ export default function BrandPartnership() {
             </div>
             {selectedVideo &&
                 <Modal open={true} centered onCancel={() => setSelectedVideo(undefined)} footer={null} className="brand-partner-video" width={680}>
-                    <YouTube videoId={selectedVideo} opts={opts} />
+                    <YouTube videoId={selectedVideo} opts={opts} className="yt-video" />
                 </Modal>
             }
         </>

@@ -33,7 +33,7 @@ export default function Footer() {
                                 <li><a href="https://www.youtube.com/@PrestonRoblox" target="_blank">PrestonRoblox</a></li>
                                 <li><a href="https://www.youtube.com/@PrestonReacts" target="_blank">PrestonReacts</a></li>
                                 <li><a href="https://www.youtube.com/@ItsKeeleyElise" target="_blank">Keeley</a></li>
-                                <li><a href="https://www.youtube.com/@DaisyAndPoppyYT" target="_blank">Daisey and Poppy</a></li>
+                                <li><a href="https://www.youtube.com/@DaisyAndPoppyYT" target="_blank">Daisy and Poppy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                             <ul>
                                 <li><a href="#whoare">Who We Are</a></li>
                                 <li><a href="#BrandStats">Brand Initiatives</a></li>
-                                <li><a href="/brand-partnership">Brand Integrations</a></li>
+                                <li><a href="/brand-integrations">Brand Integrations</a></li>
                             </ul>
                         </div>
                     </div>
