@@ -36,18 +36,6 @@ export const Teams = [
         favorite_pizza_topping: "Banana Peppers"
     },
     {
-        id: "4",
-        name: "Kristina",
-        image: "images/Kristina.jpg",
-        years_of_service: "1 year",
-        super_power: "",
-        trophy: "",
-        role: "Director, Brianna Channel",
-        start_date: "1/31/2022",
-        bio: "Our 50 YouTuber Hide and Seek at AT&T Stadium! One creator went on their walkie and said, \"Kristina with Production here--we need all hiders to come to the 50 yard line!\" in an attempt to goad the remaining hiders out of their spots and win the $100k! I was so impressed they were able to mimic my voice and their ploy ALMOST worked!",
-        favorite_pizza_topping: "Pepperoni"
-    },
-    {
         id: "5",
         name: "Callie",
         image: "images/Callie.jpg",

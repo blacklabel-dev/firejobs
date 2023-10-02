@@ -15,7 +15,7 @@ export default function Header() {
                                 <a className="nav-link" href="#whoare">Who We Are</a>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#BrandStats">Brand Stats</a>
+                                <a className="nav-link" href="#BrandStats">Brand Initiatives</a>
                             </li>
                             <li className="nav-item ">
                                 <a className="nav-link" href="#sPositions">Open Positions</a>

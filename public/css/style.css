@@ -145,7 +145,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  footer h3 {
-     font-size: 20px;
+     font-size: 16px;
      color: #FFFFFF;
      margin-bottom: 20px;
      font-family: 'Raleway', sans-serif;
@@ -169,8 +169,8 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      padding: 0 50px 0 0;
      font-family: 'Raleway', sans-serif;
      font-weight: 700;
-     font-size: 22px;
-     line-height: 32px;
+     font-size: 18px;
+     line-height: 24px;
  }
 
  .FireJob_footer-nav {}
@@ -181,7 +181,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_footer-nav ul li a {
      font-weight: 500;
-     font-size: 16px;
+     font-size: 12px;
      line-height: 32px;
      color: #FFFFFF;
      opacity: 0.6;
@@ -231,6 +231,106 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      -webkit-text-stroke-color: white;
      margin: 50px 0;
      margin: calc(50vh - 200px) 0 80px;
+ }
+
+ .page-brandpartnerships .FireJob_banner h2 {
+    margin: 80px 0 calc(50vh - 200px);
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7D7C8 100%);
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+ }
+
+ .business-partner-card {
+    padding: 30px;
+    background-color: #190D1F;
+    margin-bottom: 30px;
+    border-radius: 15px;
+ }
+
+ .business-partner-feedback {
+    margin: 10px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .business-partner-card .video-thumb-img {
+    width: 100%;
+    cursor: pointer;
+ }
+
+ .business-partner-card .partner-img {
+    margin-top: 20px;
+ }
+
+ .business-partner-feedback span {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ .business-partner-feedback span strong {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ .business-partner-feedback span b {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ .business-partner-feedback span:nth-child(1) {
+    background: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 60%, rgba(222, 99, 39, .3) 98%, #DE6327 1%);
+    margin-right: 15px;
+}
+
+ .business-partner-feedback span:nth-child(2) {
+    background: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 60%, rgba(40, 255, 113, .2) 98%, #28FF71 1%);
+    margin-right: 15px;
+}
+
+ .business-partner-feedback span:nth-child(3) {
+    background: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 60%, rgba(134, 211, 255, .2) 98%, #86D3FF 1%);
+ }
+
+ .FireJobs_our_partners {
+    text-align: center;
+    padding: 50px 60px;
+    margin: 50px 0;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 15px;
+ }
+
+ .FireJobs_our_partners h1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'x-heightingregular';
+ }
+
+ .FireJobs_our_partners .our-partners-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .FireJobs_our_partners .our-partners-icons img {
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
  }
 
  .FireJob_banner_form {}
@@ -439,6 +539,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      width: 90%;
  }
 
+ .page-brandpartnerships-body .FireJob_video_box {
+    width: 98%;
+ }
+
  .FireJob_video_box img {
      width: 100%;
      border-radius: 15px;
@@ -446,6 +550,52 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_video {
      position: relative;
+ }
+
+ .page-brandpartnerships-body .FireJob_video {
+    margin-top: calc(0px - 35vh);
+ }
+
+ .brand-partner-video .ant-modal-content {
+    padding: 20px;
+    background: linear-gradient(180deg, #1C1B39 0%, #190D1F 100%);
+ }
+
+ .brand-partner-video.ant-modal .ant-modal-content .ant-modal-close {
+    color: #ffffff;
+ }
+
+ .FireJobs_get_in_touch {
+    padding: 50px 60px;
+    background-color: #190D1F;
+    border-radius: 15px;
+    margin-bottom: 100px;
+ }
+
+ .FireJobs_get_in_touch h1 {
+    font-family: 'x-heightingregular';
+    color: #ffffff;
+ }
+
+ .FireJobs_get_in_touch p {
+    color: #ffffff;
+    opacity: 0.65;
+    padding-right: 120px;
+ }
+
+ .get_in_touch_content {
+    display: flex;
+ }
+
+ .get_in_touch_content a {
+    text-wrap: nowrap;
+    height: fit-content;
+    padding: 8px 30px;
+    background-color: #F34535;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
  }
 
  .FireJob_video h2 {
@@ -472,12 +622,11 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_brand {
-     background: url(../images/start.png);
      background-repeat: no-repeat;
      text-align: center;
      background-size: 100% 100%;
      padding: 50px 0;
-     margin: 100px 0;
+     margin: 50px 0;
  }
 
  .FireJob_brand h2 {
@@ -490,9 +639,22 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      margin-bottom: 30px;
  }
 
- .FireJob_Channels {}
+ .FireJob_Initiative {
+    background-color: #190D1F;
+    border-radius: 10px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
 
- .FireJob_Channels h3 {
+ .FireJob_Initiative img {
+    width: 60px;
+    margin-bottom: 30px;
+ }
+
+ .FireJob_Initiative h3 {
      font-size: 40px;
      line-height: 68px;
      text-align: center;
@@ -504,12 +666,19 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      font-family: 'x-heightingregular';
  }
 
- .FireJob_Channels span {
-     font-weight: 500;
+ .FireJob_Initiative span {
+     font-weight: 700;
      font-size: 20px;
      line-height: 28px;
      color: #FFFFFF;
      font-family: 'Raleway', sans-serif;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+ }
+
+ .FireJob_Initiative p {
+    color: #ffffff;
+    opacity: .65;
  }
 
  .filtering {
@@ -1306,6 +1475,12 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      z-index: 9
  }
 
+ @media (min-width: 1400px) {
+    .FireJob_Initiative img {
+        width: 80px;
+    }
+ }
+
  @media(min-width:1200px) and (max-width:1399px) {
 
      header .navbar-nav li a {
@@ -1336,7 +1511,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          font-size: 45px
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 35px
      }
 
@@ -1407,6 +1582,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      .FireJob_Great ul li {
          font-size: 14px
      }
+
+     .FireJobs_our_partners .our-partners-icons img {
+        height: 40px;
+     }
  }
 
  @media(min-width:768px) and (max-width:991px) {
@@ -1429,7 +1608,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          line-height: 34px;
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 25px;
          line-height: 30px;
      }
@@ -1525,7 +1704,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          line-height: 22px;
      }
 
-     .FireJob_Channels span {
+     .FireJob_Initiative span {
          font-size: 17px
      }
 
@@ -1543,6 +1722,44 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
      .FireJob_Main {
          background-size: cover;
+     }
+
+     .FireJob_footer-social ul {
+        justify-content: center;
+        min-width: 100%;
+     }
+
+     .FireJob_footer-social ul li {
+        padding: 0 15px 0 15px;
+     }
+
+     .page-brandpartnerships-body .FireJob_video_box {
+        width: 100%;
+     }
+
+     .FireJobs_our_partners {
+        padding: 30px;
+     }
+
+     .FireJobs_our_partners .our-partners-icons img {
+        height: 30px;
+     }
+
+     .FireJobs_get_in_touch {
+        padding: 30px;
+     }
+
+     .get_in_touch_content {
+        flex-direction: column;
+     }
+
+     .get_in_touch_content a {
+        max-width: 160px;
+     }
+
+     .FireJobs_get_in_touch p {
+        padding: 0;
+        margin-bottom: 30px;
      }
  }
 
@@ -1607,7 +1824,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          text-align: center;
      }
 
-     .FireJob_Channels h3 {
+     .FireJob_Initiative h3 {
          font-size: 31px;
          line-height: 30px;
      }
@@ -1705,9 +1922,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          font-size: 16px;
          line-height: 22px;
          text-align: center;
+         margin-top: 30px;
      }
 
-     .FireJob_Channels span {
+     .FireJob_Initiative span {
          font-size: 17px
      }
 
@@ -1715,7 +1933,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
          margin-bottom: 40px;
      }
 
-     .FireJob_Channels {
+     .FireJob_Initiative {
          margin: 20px 0
      }
 
@@ -1733,11 +1951,56 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      .FireJob_select {
          margin: 10px 0
      }
+
+     .FireJob_footer-social ul {
+        justify-content: center;
+        min-width: 100%;
+     }
+
+     .FireJob_footer-social ul li {
+        padding: 0 15px 0 15px;
+     }
+
+     .page-brandpartnerships-body .FireJob_video_box {
+        width: 100%;
+     }
+
+     .FireJobs_our_partners {
+        padding: 30px;
+     }
+
+     .FireJobs_our_partners .our-partners-icons {
+        flex-wrap: wrap;
+     }
+
+     .FireJobs_our_partners .our-partners-icons img {
+        height: 40px;
+     }
+
+     .FireJobs_get_in_touch {
+        padding: 30px;
+     }
+
+     .get_in_touch_content {
+        flex-direction: column;
+     }
+
+     .get_in_touch_content a {
+        max-width: 160px;
+     }
+
+     .FireJobs_get_in_touch p {
+        padding: 0;
+        margin-bottom: 30px;
+     }
+
+     .page-brandpartnerships-body .FireJob_video {
+        margin-top: -150px;
+    }
  }
 
  @media(min-width:571px) and (max-width:767px) {
      .FireJob_glightbox_low a {
          float: left;
      }
-
  }

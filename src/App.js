@@ -1,13 +1,14 @@
 import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/layouts/Footer';
-import Header from './components/layouts/Header';
+import BrandPartnership from './pages/BrandPartnership';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home />}/>
+        <Route exact path="/brand-partnership" element={<BrandPartnership />}/>
       </Routes>
       <Footer />
     </div>
