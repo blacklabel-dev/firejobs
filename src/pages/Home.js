@@ -202,9 +202,9 @@ export default function Home() {
                                                 <div className="FireJob_item_img"><img src={el.image} /></div>
                                                 <div className="FireJob_item_data">
                                                     <h3>{el.name}</h3>
-                                                    <h5>{el.role}</h5>
-                                                    <h4>Years of Service:<span>{el.years_of_service}</span></h4>
-                                                    <button onClick={() => setSelectedBio(el)}>Favorite Memory</button>
+                                                    {/* <h5>{el.role}</h5> */}
+                                                    {/* <h4>Years of Service:<span>{el.years_of_service}</span></h4> */}
+                                                    <button onClick={() => setSelectedBio(el)}>Read More</button>
                                                 </div>
                                             </div>
                                         </div>
