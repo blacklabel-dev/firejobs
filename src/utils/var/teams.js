@@ -8,7 +8,9 @@ export const Teams = [
         trophy: "",
         role: "Videographer/Production Associate",
         start_date: "9/12/2022",
-        bio: "Creating streamlined, no fuss workflows that makes everyone's job easier. I'm passionate about supporting local businesses and arts education. Growing from an Ops Manager to a Director leading a 10 person department.",
+        a1: "Creating streamlined, no fuss workflows that makes everyone's job easier.",
+        a2: "I'm passionate about supporting local businesses and arts education.",
+        a3: "Growing from an Ops Manager to a Director leading a 10 person department.",
         favorite_pizza_topping: "Jalapeños"
     },
     {
@@ -20,7 +22,9 @@ export const Teams = [
         trophy: "",
         role: "Lead Editor",
         start_date: "12/15/2020",
-        bio: "Being in an industry that values creativity, collaboration, and excitement and combines my personal interests with my career goals. Getting to connect with others who share this passion is the cherry on top!	Whether it's at work or in my personal life, I'm passionate about building meaningful relationships,getting to know what makes people tick, and creating authentic connections.	Being entrusted to begin the foundation of our recruitment department and processes as well as scaling the company from around 50 employees to over 100 in the span of a year!",
+        a1: "Being in an industry that values creativity, collaboration, and excitement and combines my personal interests with my career goals. Getting to connect with others who share this passion is the cherry on top!",
+        a2: "Whether it's at work or in my personal life, I'm passionate about building meaningful relationships,getting to know what makes people tick, and creating authentic connections.",
+        a3: "Being entrusted to begin the foundation of our recruitment department and processes as well as scaling the company from around 50 employees to over 100 in the span of a year!",
         favorite_pizza_topping: "Pineapple"
     },
     {
@@ -32,7 +36,9 @@ export const Teams = [
         trophy: "",
         role: "Assistant Videographer",
         start_date: "5/16/2022",
-        bio: "Creative people! I'm always astounded by the things individuals can come up with, and even more astounded by the creativity that the convergence of multiple personalities can produce.	I'm passionate about art. About creativity. About connecting with people and getting to know them on a human level. I'm passionate about Youtube. I'm just generally passionate about life and the wonderful range of experiences it has to offer.	I'm most proud of the genuine connections I've been able to form with the people I have the pleasure to work with each day.",
+        a1: "Creative people! I'm always astounded by the things individuals can come up with, and even more astounded by the creativity that the convergence of multiple personalities can produce.",
+        a2: "I'm passionate about art. About creativity. About connecting with people and getting to know them on a human level. I'm passionate about Youtube. I'm just generally passionate about life and the wonderful range of experiences it has to offer.",
+        a3: "I'm most proud of the genuine connections I've been able to form with the people I have the pleasure to work with each day.",
         favorite_pizza_topping: "Banana Peppers"
     },
     {
@@ -44,7 +50,9 @@ export const Teams = [
         trophy: "",
         role: "Videographer",
         start_date: "8/3/2020",
-        bio: "Being able to create new content and blow our standards out of the water week in and week out.	Leveling up, getting better every single day and able to consider ourselves one of the top dogs in the YouTube world.	From walking on a plane, smashing bullet proof glass, or even beating Minecraft in real life. Nothing will ever beat our 50 YouTuber Hide and Seek video. For several months, having a project on this scale was something we never thought we would do. We had no idea what the outcome would be, what story we would make and that's what made it SICK. One day I'm going to frame that timeline on my wall.",
+        a1: "Being able to create new content and blow our standards out of the water week in and week out.",
+        a2: "Leveling up, getting better every single day and able to consider ourselves one of the top dogs in the YouTube world.",
+        a3: "From walking on a plane, smashing bullet proof glass, or even beating Minecraft in real life. Nothing will ever beat our 50 YouTuber Hide and Seek video. For several months, having a project on this scale was something we never thought we would do. We had no idea what the outcome would be, what story we would make and that's what made it SICK. One day I'm going to frame that timeline on my wall.",
         favorite_pizza_topping: "Pepperoni"
     },
     {
@@ -56,7 +64,9 @@ export const Teams = [
         trophy: "",
         role: "Lead Editor",
         start_date: "10/28/2019",
-        bio: "Creating the coolest & most entertaining content we can for our viewer! Each day is a new opportunity to make something great 😎	As a manager for TBNR I'm very passionate about team unity and positivity in growth! When we creativity collaborate anything is possible! 🤘 Being the live performance Technical Director at AT&T Cowboy Stadium for the \"I HUNTED 50 YouTubers for $100,000! video!\" And serving as the Post Production Supervisor of that edit. 🔥",
+        a1: "Creating the coolest & most entertaining content we can for our viewer! Each day is a new opportunity to make something great 😎",
+        a2: "As a manager for TBNR I'm very passionate about team unity and positivity in growth! When we creativity collaborate anything is possible! 🤘",
+        a3: "Being the live performance Technical Director at AT&T Cowboy Stadium for the \"I HUNTED 50 YouTubers for $100,000!\" video! And serving as the Post Production Supervisor of that edit. 🔥",
         favorite_pizza_topping: "Supreme"
     },
     {
@@ -68,7 +78,9 @@ export const Teams = [
         trophy: "",
         role: "Customer Support Supervisor",
         start_date: "11/21/2016",
-        bio: "When my whole team is on the same level, all of our passion in sync for creating the best video that a specific idea can become.	Efficiency that doesn't compromise on quality. I like putting new things into the world, whether it be an idea, a concept, a style, anything that I can contribute that is fresh, is extremely rewarding. Working in Youtube allows me the freedom to experiment with new things that working in other aspects of filmmaking can't offer, which is extremely valuable while I'm still young in my career path.	Bri's, \"These Items from our Childhood could KILL YOU!\" video - I think we all expected it to be a regular \"listicle\" before it hit post, but in the bay we got a vision and we took it there, it became a top-performer, and now we have a series of these videos. It's perfect, because it's low lift for all teams, and it's a very fun process for all teams, and it's exactly what our viewer base wants more of right now.",
+        a1: "When my whole team is on the same level, all of our passion in sync for creating the best video that a specific idea can become.",
+        a2: "Efficiency that doesn't compromise on quality. I like putting new things into the world, whether it be an idea, a concept, a style, anything that I can contribute that is fresh, is extremely rewarding. Working in Youtube allows me the freedom to experiment with new things that working in other aspects of filmmaking can't offer, which is extremely valuable while I'm still young in my career path.",
+        a3: "Bri's, \"These Items from our Childhood could KILL YOU!\" video - I think we all expected it to be a regular \"listicle\" before it hit post, but in the bay we got a vision and we took it there, it became a top-performer, and now we have a series of these videos. It's perfect, because it's low lift for all teams, and it's a very fun process for all teams, and it's exactly what our viewer base wants more of right now.",
         favorite_pizza_topping: "Jalapenos"
     },
     {
@@ -80,7 +92,9 @@ export const Teams = [
         trophy: "",
         role: "Post Production Manager",
         start_date: "2/7/2022",
-        bio: "Making magic. This job is full of creativity and the way in which we bring ideas to life is what makes film production so fun. I love working on a project from start to finish and then getting to relish in what the end product became. And I love seeing how it effects people when they watch it. It's like magic to me.	Im passionate about film production and all the ways in which it's made. I love how you can manipulate film with music, editing, lighting, etc to create any kind of feeling to the viewer. You can influence and impact people, and I want to be apart of that.	I started at TBNR as a contracted PA in the summer while I was home from college. The company had such an impact on me that I came back to work full time after I graduated a year later. Now, I've just moved up to Associate Producer and I am proud of all the work and experiences I've gotten throughout my time here. I am happy to start learning even more in my new position and to help grow this company further.",
+        a1: "Making magic. This job is full of creativity and the way in which we bring ideas to life is what makes film production so fun. I love working on a project from start to finish and then getting to relish in what the end product became. And I love seeing how it effects people when they watch it. It's like magic to me.",
+        a2: "I'm passionate about film production and all the ways in which it's made. I love how you can manipulate film with music, editing, lighting, etc to create any kind of feeling to the viewer. You can influence and impact people, and I want to be apart of that.",
+        a3: "I started at TBNR as a contracted PA in the summer while I was home from college. The company had such an impact on me that I came back to work full time after I graduated a year later. Now, I've just moved up to Associate Producer and I am proud of all the work and experiences I've gotten throughout my time here. I am happy to start learning even more in my new position and to help grow this company further.",
         favorite_pizza_topping: "Detroit Style-Pizza"
     },
     {
@@ -92,7 +106,9 @@ export const Teams = [
         trophy: "",
         role: "Post Production Manager",
         start_date: "2/7/2022",
-        bio: "Making content that I can be proud of. It's really fun to create something that your proud and excited to show family and friends.	Always pushing further and leveling up each production. How can we make this next video even better than the last one we did. How can we push our limits!	Seeing the positive impact we make around us. From charitable donations to interacting with fans at meet and greets and seeing how much fun they have with our content, it really feels like you are a part of something special.",
+        a1: "Making content that I can be proud of. It's really fun to create something that your proud and excited to show family and friends.",
+        a2: "Always pushing further and leveling up each production. How can we make this next video even better than the last one we did. How can we push our limits!",
+        a3: "Seeing the positive impact we make around us. From charitable donations to interacting with fans at meet and greets and seeing how much fun they have with our content, it really feels like you are a part of something special.",
         favorite_pizza_topping: "Detroit Style-Pizza"
     }
 ]

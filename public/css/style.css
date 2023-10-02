@@ -1997,6 +1997,11 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      .page-brandpartnerships-body .FireJob_video {
         margin-top: -150px;
     }
+
+    .business-partner-feedback span {
+        width: 100%;
+        margin-right: 0 !important;
+    }
  }
 
  @media(min-width:571px) and (max-width:767px) {
