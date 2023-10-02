@@ -24,7 +24,7 @@ export default function BrandPartnership() {
                             <div className="row">
                                 <div className="col-sm-12">
                                     <div className="FireJob_best">
-                                        <h2>Brand<br />Partnerships</h2>
+                                        <h2>Brand<br />Integrations</h2>
                                     </div>
                                 </div>
                             </div>
