@@ -108,6 +108,21 @@ font-family: 'x-heightingregular';
      height: 67px;
  }
 
+ header .location-brand-partnerships .navbar-nav li.active:before {
+    display: none;
+ }
+
+ header .location-brand-partnerships .navbar-nav li.active a {
+    border-bottom: unset;
+    opacity: 0.6;
+ }
+
+ header .location-brand-partnerships .navbar-nav li a:hover {
+    border-bottom: 4px solid #F34535;
+    color: #fff;
+    opacity: 1;
+ }
+
  header .navbar-nav li strong {
      color: #5FF177;
  }
@@ -928,6 +943,11 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      opacity: 0.7;
      font-weight: 400;
      font-size: 16px;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
  }
 
  .FireJob_item {

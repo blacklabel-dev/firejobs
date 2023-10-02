@@ -332,6 +332,8 @@ export default function Home() {
             {selectedBio &&
                 <Modal open={true} onCancel={() => setSelectedBio(undefined)} footer={null} className="bio-modal">
                     <h3>{selectedBio.name}</h3>
+                    <h5>What excites you?</h5>
+                    <p>{selectedBio.a1}</p>
                     <h5>What are you passionate about?</h5>
                     <p>{selectedBio.a2}</p>
                     <h5>What are you most proud of during your time at TBNR?</h5>
