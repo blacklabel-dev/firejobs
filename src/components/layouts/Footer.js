@@ -1,4 +1,5 @@
 import React from "react"
+import { HashLink } from "react-router-hash-link"
 
 export default function Footer() {
     return (
@@ -41,8 +42,8 @@ export default function Footer() {
                         <div className="FireJob_footer-nav">
                             <h3>ABOUT TBNR</h3>
                             <ul>
-                                <li><a href="#whoare">Who We Are</a></li>
-                                <li><a href="#BrandStats">Brand Initiatives</a></li>
+                                <li><HashLink to="/#whoare">Who We Are</HashLink></li>
+                                <li><HashLink to="/#BrandStats">Brand Initiatives</HashLink></li>
                                 <li><a href="/brand-integrations">Brand Integrations</a></li>
                             </ul>
                         </div>
@@ -63,7 +64,7 @@ export default function Footer() {
                             <ul>
                                 <li><a href="mailto:apply@firejobs.gg"><img src="images/email.png" /></a></li>
                                 <li><a href="https://www.linkedin.com/company/tbnrproductions/" target="_blank"><img className="linkedImg" src="images/linked_in.png" /></a></li>
-                                <li><a href="https://discord.onl/fire-nation/" target="_blank"><img className="youtubeImg" src="images/discord.png" /></a></li>
+                                <li><a href="https://discord.com/invite/preston" target="_blank"><img className="youtubeImg" src="images/discord.png" /></a></li>
                             </ul>
                         </div>
                     </div>

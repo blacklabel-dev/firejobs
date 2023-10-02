@@ -328,7 +328,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJobs_our_partners .our-partners-icons img {
-    height: 50px;
+    height: 45px;
     margin-top: 30px;
     margin-right: 30px;
  }
@@ -1490,6 +1490,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      .FireJob_glightbox_dta h3 {
          min-height: 90px;
      }
+
+     .FireJobs_our_partners .our-partners-icons img {
+        height: 40px;
+     }
  }
 
  @media(min-width:992px) and (max-width:1199px) {
@@ -1585,7 +1589,12 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
      .FireJobs_our_partners .our-partners-icons img {
         height: 40px;
+        flex-wrap: wrap;
      }
+
+     .FireJobs_our_partners .our-partners-icons {
+        flex-wrap: wrap;
+    }
  }
 
  @media(min-width:768px) and (max-width:991px) {
@@ -1761,6 +1770,14 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
         padding: 0;
         margin-bottom: 30px;
      }
+
+     .FireJobs_our_partners .our-partners-icons img {
+        height: 30px;
+     }
+
+     .FireJobs_our_partners .our-partners-icons {
+        flex-wrap: wrap;
+    }
  }
 
  @media(min-width:200px) and (max-width:767px) {
@@ -2002,6 +2019,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
         width: 100%;
         margin-right: 0 !important;
     }
+
+    .FireJobs_our_partners .our-partners-icons {
+       flex-wrap: wrap;
+   }
  }
 
  @media(min-width:571px) and (max-width:767px) {

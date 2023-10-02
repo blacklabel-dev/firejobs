@@ -96,7 +96,7 @@ export default function Home() {
             </div>
 
             <div className="FireJob_body">
-                <div className="FireJob_video" id="whoare">
+                <div className="FireJob_video" id="whoare" name="whoare">
                     <div className="container">
                         <div className="row align-items-center mb-5">
                             <div className="col-md-6">
@@ -123,7 +123,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="FireJob_star" id="BrandStats">
+                <div className="FireJob_star" id="BrandStats" name="BrandStats">
                     <div className="container">
                         <div className="FireJob_brand">
                             <h2>BRAND INITIATIVES</h2>
@@ -153,7 +153,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="FireJob_Positions" id="sPositions">
+                <div className="FireJob_Positions" id="sPositions" name="sPositions">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Open Positions</h2>
@@ -187,7 +187,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Trailblazers" id="Trailblazers">
+                <div className="FireJob_Trailblazers" id="Trailblazers" name="Trailblazers">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-3">
@@ -215,7 +215,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Perks" id="FireJob_Perks">
+                <div className="FireJob_Perks" id="FireJob_Perks" name="FireJob_Perks">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Fire Perks</h2>
@@ -282,7 +282,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Pillars_section" id="Firejob_Pillars">
+                <div className="FireJob_Pillars_section" id="Firejob_Pillars" name="Firejob_Pillars">
                     <div className="container">
                         <h2>Fire Pillars are the foundation of everything created here - including careers.</h2>
                         <h3>Fire Pillars</h3>

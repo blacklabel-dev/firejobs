@@ -47,8 +47,8 @@ export default function BrandPartnership() {
                                     <img src="images/zuru.png" className="partner-img" />
                                     <div className="business-partner-feedback">
                                         <span><strong>10</strong> Sponsored Videos</span>
-                                        <span><strong>36.0M</strong> Views</span>
-                                        <span><strong>132.2K</strong> Watch Time</span>
+                                        <span><strong>36.0M+</strong> Views</span>
+                                        <span><strong>1.6M+</strong> Watch Time Hours</span>
                                     </div>
                                     <p>Over the past 2 years, TBNR has partnered with Zuru to produce 10 videos featuring 6 unique products. From an X-Shot blaster battle royale to filling up a Tesla with water balloons, to building a secret room in a waterpark, TBNR and Zuru worked hand in hand to deliver the most fun and exciting content to our audience!</p>
                                 </div>
@@ -65,8 +65,8 @@ export default function BrandPartnership() {
                                     <img src="images/air_up.png" className="partner-img" />
                                     <div className="business-partner-feedback">
                                         <span><strong>4</strong> Sponsored Videos</span>
-                                        <span><strong>9.3M</strong> Views</span>
-                                        <span><strong>1.2M</strong> Watch Time</span>
+                                        <span><strong>9.3M+</strong> Views</span>
+                                        <span><strong>1.2M+</strong> Watch Time Hours</span>
                                     </div>
                                     <p>During the Summer of 2023, TBNR took brand integrations to the next level with Air Up. Leaving ad reads in the past, TBNR seamlessly integrated Air Up and their product into the storylines of 4 videos that exemplify effective viewer retention tactics.</p>
                                 </div>
@@ -82,9 +82,9 @@ export default function BrandPartnership() {
                                 <div className="col-lg-6">
                                     <img src="images/2k_drive.png" className="partner-img" />
                                     <div className="business-partner-feedback">
-                                        <span><strong>4</strong> Sponsored Videos</span>
+                                        <span><strong>7</strong> Sponsored Videos</span>
                                         <span><b>Community Engagement</b></span>
-                                        <span><b>Community Engagement</b></span>
+                                        <span><b>NYC Meet and Greet</b></span>
                                     </div>
                                     <p>To DRIVE (pun intended) awareness for their brand new LEGO 2K Drive game, 2K Games worked through TBNR to execute a multi-faceted promotional campaign involving dedicated video content, giveaways, a meet and greet in New York City, and even a message of support for F1 driver Lando Norris.</p>
                                 </div>
@@ -102,9 +102,9 @@ export default function BrandPartnership() {
                                     <div className="business-partner-feedback">
                                         <span><strong>2</strong> Sponsored Videos</span>
                                         <span><strong>11.5M+</strong> Views</span>
-                                        <span><strong>1.2M+</strong> Watch Time</span>
+                                        <span><strong>1.2M+</strong> Watch Time Hours</span>
                                     </div>
-                                    <p>Over the past 2 years, TBNR has partnered with Zuru to produce 10 videos featuring 6 unique products. From an X-Shot blaster battle royale to filling up a Tesla with water balloons, to building a secret room in a waterpark, TBNR and Zuru worked hand in hand to deliver the most fun and exciting content to our audience!</p>
+                                    <p>GameStop collaborated with Preston on a comprehensive two-video awareness campaign aimed at generating excitement for the relaunch of their rewards program, transitioning from "Power-Up Rewards" to "GameStop Pro," with the primary objective of driving sign-up engagement. Our partnership successfully facilitated the conception and execution of a strategic influencer go-to-market approach for the GameStop Pro initiative.</p>
                                 </div>
                             </div>
                         </div>
@@ -118,11 +118,11 @@ export default function BrandPartnership() {
                                 <div className="col-lg-6">
                                     <img src="images/google_play_light.png" className="partner-img" />
                                     <div className="business-partner-feedback">
-                                        <span><strong>5</strong> Social Media Post</span>
+                                        <span><strong>5</strong> Social Media Posts</span>
                                         <span><b>Paid Media Announcement</b></span>
-                                        <span><b>Paid Media Announcement</b></span>
+                                        <span><b>Google Play Live Host</b></span>
                                     </div>
-                                    <p>In 2023, Brianna hosted the second annual Google Play Live, an interactive livestream featuring popular YouTube Creators, hidden gems on the Play Store, gaming with Google Play Games and much more. Along with a full social media campaign, Brianna and the rest of the Google Play Live show team drove awareness to the biggest deal week of the year on Google Play.</p>
+                                    <p>In 2023, Brianna hosted the second annual Google Play Live, an interactive livestream featuring *popular YouTube Creators, hidden gems on the Play Store, gaming with Google Play Games and much more. Along with a full social media campaign, Brianna and the rest of the Google Play Live show team drove awareness to the biggest deal week of the year on Google Play.</p>
                                 </div>
                             </div>
                         </div>
@@ -133,10 +133,13 @@ export default function BrandPartnership() {
                         <div className="row">
                             <h1>OUR PARTNERS</h1>
                             <div className="our-partners-icons">
-                                <img src="images/zuru.png" />
-                                <img src="images/gamestop.png" />
-                                <img src="images/2k_drive.png" />
-                                <img src="images/google_play.png" />
+                                <img src="images/p1.png" />
+                                <img src="images/p2.png" />
+                                <img src="images/p3.png" />
+                                <img src="images/p4.png" />
+                                <img src="images/p5.png" />
+                                <img src="images/p6.png" />
+                                <img src="images/p7.png" />
                             </div>
                         </div>
                     </div>
@@ -147,7 +150,7 @@ export default function BrandPartnership() {
                             <h1>Work with us</h1>
                             <div className="get_in_touch_content">
                                 <p>In the heart of the creator economy, TBNR specializes in taking the entire creative process, from conception and production to meticulous editing, campaign execution, and comprehensive reporting, thus relieving our brand partners of the heavy lift. We thrive on nurturing connections within our Fire Nation community and fostering genuine partnerships with the brands we collaborate with. Our ultimate goal is to not only achieve but surpass the goals set by our brand partners, all while fostering meaningful and enduring relationships with them.</p>
-                                <a href="#">Get in touch</a>
+                                <a href="mailto:Partnerships@tbnr.work">Get in touch</a>
                             </div>
                         </div>
                     </div>

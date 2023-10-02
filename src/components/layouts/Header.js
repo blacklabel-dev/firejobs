@@ -1,4 +1,5 @@
 import React from "react"
+import { HashLink } from "react-router-hash-link"
 
 export default function Header() {
     return (
@@ -12,22 +13,22 @@ export default function Header() {
                     <div className="collapse navbar-collapse  " id="collapsibleNavbar">
                         <ul className="navbar-nav  ml-auto   mt-lg-0 nav-rot">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#whoare">Who We Are</a>
+                                <HashLink className="nav-link" to="/#whoare" smooth>Who We Are</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#BrandStats">Brand Initiatives</a>
+                                <HashLink className="nav-link" to="/#BrandStats" name="BrandStats" smooth>Brand Initiatives</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#sPositions">Open Positions</a>
+                                <HashLink className="nav-link" to="/#sPositions" name="sPositions">Open Positions</HashLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Trailblazers">Trailblazers</a>
+                                <HashLink className="nav-link" to="/#Trailblazers" name="Trailblazers">Trailblazers</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#FireJob_Perks">Perks</a>
+                                <HashLink className="nav-link" to="/#FireJob_Perks" name="FireJob_Perks">Perks</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#Firejob_Pillars">Pillars</a>
+                                <HashLink className="nav-link" to="/#Firejob_Pillars" name="Firejob_Pillars">Pillars</HashLink>
                             </li>
                         </ul>
                     </div>
