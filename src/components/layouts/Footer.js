@@ -53,7 +53,7 @@ export default function Footer() {
                             <ul>
                                 <li><a href="https://www.businessinsider.com/preston-creator-manager-in-house-doubled-brand-deal-revenue-2023-6">Business Insider</a></li>
                                 <li><a href="https://www.tubefilter.com/2023/09/08/preston-playz-tbnr-media-company-reorganzation/">Tubefilter</a></li>
-                                <li><a href="https://www.forbes.com/30-under-30/2021/games/">Forbes</a></li>
+                                <li><a href="https://forbesinfo.forbes.com/e/801473/-source-Pardot-utm-content-EM1/5dfl8x/1381205640?h=1oe-YV_ABMBLVsqkMXcCTNiOkrZXzju8MWWhVO84M2A">Forbes</a></li>
                             </ul>
                         </div>
                     </div>
