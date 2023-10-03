@@ -4,6 +4,32 @@ import JobCard from "../components/home/JobCard"
 import { callGetApi } from "../utils/api/api"
 import { Teams } from "../utils/var/teams"
 import { Modal } from "antd"
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+const options = {
+    autoplay:true,
+    loop: true,
+    autoplaySpeed: 1000,
+    margin:10,
+    nav:false,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        575: {
+            items: 2
+        },
+        767:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+};
 
 export default function Home() {
     const [departments, setDepartments] = useState([])
@@ -195,7 +221,10 @@ export default function Home() {
                                 <p>To make trailblazing content we look to hire the brightest and most creative people in the industry who like to have fun and be weird!</p>
                             </div>
                             <div className="col-lg-9">
-                                <div className="owl-carousel">
+                                <OwlCarousel
+                                    className='owl-carousel owl-theme'
+                                    {...options}
+                                >
                                     {Teams.map((el) => (
                                         <div className="item" key={el.id}>
                                             <div className="FireJob_item">
@@ -211,7 +240,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     ))}
-                                </div>
+                                </OwlCarousel>
                             </div>
                         </div>
                     </div>

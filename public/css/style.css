@@ -1968,6 +1968,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
      .FireJob_Trailblazers p {
          margin-bottom: 40px;
+         text-align: left;
      }
 
      .FireJob_Initiative {
