@@ -1,6 +1,10 @@
 import React from "react"
+import { useLocation } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 export default function Header() {
+    const location = useLocation(); 
+
     return (
         <header className="FireJob_home-header">
             <nav className="navbar navbar-expand-md">
@@ -9,25 +13,25 @@ export default function Header() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse  " id="collapsibleNavbar">
+                    <div className={`collapse navbar-collapse ${location.pathname.indexOf("/brand-integrations") >= 0 ? "location-brand-partnerships" : ""} `} id="collapsibleNavbar">
                         <ul className="navbar-nav  ml-auto   mt-lg-0 nav-rot">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#whoare">Who We Are</a>
+                                <HashLink className="nav-link" to="/#whoare" smooth>Who We Are</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#BrandStats">Brand Initiatives</a>
+                                <HashLink className="nav-link" to="/brand-integrations" name="BrandStats" smooth>Brand Partnerships</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#sPositions">Open Positions</a>
+                                <HashLink className="nav-link" to="/#sPositions" name="sPositions">Open Positions</HashLink>
+                            </li>
+                            <li className="nav-item ">
+                                <HashLink className="nav-link" to="/#FireProjects" name="BrandStats" smooth>Fire Projects</HashLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Trailblazers">Trailblazers</a>
+                                <HashLink className="nav-link" to="/#Trailblazers" name="Trailblazers">Trailblazers</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="#FireJob_Perks">Perks</a>
-                            </li>
-                            <li className="nav-item ">
-                                <a className="nav-link" href="#Firejob_Pillars">Pillars</a>
+                                <HashLink className="nav-link" to="/#FireJob_Perks" name="FireJob_Perks">Perks</HashLink>
                             </li>
                         </ul>
                     </div>

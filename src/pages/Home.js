@@ -96,7 +96,7 @@ export default function Home() {
             </div>
 
             <div className="FireJob_body">
-                <div className="FireJob_video" id="whoare">
+                <div className="FireJob_video" id="whoare" name="whoare">
                     <div className="container">
                         <div className="row align-items-center mb-5">
                             <div className="col-md-6">
@@ -123,37 +123,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="FireJob_star" id="BrandStats">
-                    <div className="container">
-                        <div className="FireJob_brand">
-                            <h2>BRAND INITIATIVES</h2>
-                            <div className="row ">
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firegame.png" />
-                                        <span>fire games</span>
-                                        <p>The furnace where games get made. FireGames is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games. FireGames is where gaming seamlessly merges with content creation.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firedata.png" />
-                                        <span>fire data</span>
-                                        <p>The future of all influence. FireData is dedicated to revolutionizing the creator economy industry. Our mission is clear: to establish industry-standard practices through advanced analytics and insights, dismantling inefficiencies and gatekeepers, including agencies. We are fervently committed to promoting transparency and facilitating access to cutting-edge SaaS solutions. We are igniting a new era of empowerment and innovation within the creator economy.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firemerch.png" />
-                                        <span>fire merch</span>
-                                        <p>Where style ignites. FireMerch represents our commitment to creativity, style, and quality that has fueled our growth and transformation! With a fusion of nostalgia and innovation, our designs not only tell a story, but also ensure the comfort and satisfaction of our valued community.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="FireJob_Positions" id="sPositions">
+                <div className="FireJob_Positions" id="sPositions" name="sPositions">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Open Positions</h2>
@@ -186,8 +156,38 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div className="FireJob_star" id="FireProjects" name="FireProjects">
+                    <div className="container">
+                        <div className="FireJob_brand">
+                            <h2>Fire Projects</h2>
+                            <div className="row ">
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/firegame.png" />
+                                        <span>fire games</span>
+                                        <p>The furnace where games get made. FireGames is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games. FireGames is where gaming seamlessly merges with content creation.</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/firedata.png" />
+                                        <span>fire data</span>
+                                        <p>The future of all influence. FireData is dedicated to revolutionizing the creator economy industry. Our mission is clear: to establish industry-standard practices through advanced analytics and insights, dismantling inefficiencies and gatekeepers, including agencies. We are fervently committed to promoting transparency and facilitating access to cutting-edge SaaS solutions. We are igniting a new era of empowerment and innovation within the creator economy.</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <img src="images/firemerch.png" />
+                                        <span>fire merch</span>
+                                        <p>Where style ignites. FireMerch represents our commitment to creativity, style, and quality that has fueled our growth and transformation! With a fusion of nostalgia and innovation, our designs not only tell a story, but also ensure the comfort and satisfaction of our valued community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div className="FireJob_Trailblazers" id="Trailblazers">
+                <div className="FireJob_Trailblazers" id="Trailblazers" name="Trailblazers">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-3">
@@ -204,6 +204,8 @@ export default function Home() {
                                                     <h3>{el.name}</h3>
                                                     {/* <h5>{el.role}</h5> */}
                                                     {/* <h4>Years of Service:<span>{el.years_of_service}</span></h4> */}
+                                                    <h5>What excites you?</h5>
+                                                    <p>{el.a1}</p>
                                                     <button onClick={() => setSelectedBio(el)}>Read More</button>
                                                 </div>
                                             </div>
@@ -215,7 +217,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Perks" id="FireJob_Perks">
+                <div className="FireJob_Perks" id="FireJob_Perks" name="FireJob_Perks">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Fire Perks</h2>
@@ -282,7 +284,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Pillars_section" id="Firejob_Pillars">
+                <div className="FireJob_Pillars_section" id="Firejob_Pillars" name="Firejob_Pillars">
                     <div className="container">
                         <h2>Fire Pillars are the foundation of everything created here - including careers.</h2>
                         <h3>Fire Pillars</h3>
@@ -333,9 +335,9 @@ export default function Home() {
                     <h5>What excites you?</h5>
                     <p>{selectedBio.a1}</p>
                     <h5>What are you passionate about?</h5>
-                    <p>{selectedBio.a1}</p>
+                    <p>{selectedBio.a2}</p>
                     <h5>What are you most proud of during your time at TBNR?</h5>
-                    <p>{selectedBio.a1}</p>
+                    <p>{selectedBio.a3}</p>
                 </Modal>
             }
         </>
