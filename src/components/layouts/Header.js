@@ -28,7 +28,7 @@ export default function Header() {
                                 <HashLink className="nav-link" to="/#Trailblazers" name="Trailblazers">Trailblazers</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#FireProjects" name="BrandStats" smooth>Fire Projects</HashLink>
+                                <HashLink className="nav-link" to="/#FireProjects" name="FireProjects" smooth>Fire Projects</HashLink>
                             </li>
                             <li className="nav-item ">
                                 <HashLink className="nav-link" to="/#FireJob_Perks" name="FireJob_Perks">Perks</HashLink>
