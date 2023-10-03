@@ -139,7 +139,7 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-6 order-md-2">
                                 <div className="FireJob_video_box">
-                                    <img src="images/who_we_are_2.jpg" />
+                                    <img src="images/2nd-img.jpg" />
                                 </div>
                             </div>
                             <div className="col-md-6 order-md-1">
@@ -182,36 +182,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="FireJob_star" id="FireProjects" name="FireProjects">
-                    <div className="container">
-                        <div className="FireJob_brand">
-                            <h2>Fire Projects</h2>
-                            <div className="row ">
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firegame.png" />
-                                        <span>fire games</span>
-                                        <p>The furnace where games get made. FireGames is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games. FireGames is where gaming seamlessly merges with content creation.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firedata.png" />
-                                        <span>fire data</span>
-                                        <p>The future of all influence. FireData is dedicated to revolutionizing the creator economy industry. Our mission is clear: to establish industry-standard practices through advanced analytics and insights, dismantling inefficiencies and gatekeepers, including agencies. We are fervently committed to promoting transparency and facilitating access to cutting-edge SaaS solutions. We are igniting a new era of empowerment and innovation within the creator economy.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 mb-5">
-                                    <div className="FireJob_Initiative">
-                                        <img src="images/firemerch.png" />
-                                        <span>fire merch</span>
-                                        <p>Where style ignites. FireMerch represents our commitment to creativity, style, and quality that has fueled our growth and transformation! With a fusion of nostalgia and innovation, our designs not only tell a story, but also ensure the comfort and satisfaction of our valued community.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="FireJob_Trailblazers" id="Trailblazers" name="Trailblazers">
                     <div className="container">
@@ -241,6 +211,45 @@ export default function Home() {
                                         </div>
                                     ))}
                                 </OwlCarousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="FireJob_star" id="FireProjects" name="FireProjects">
+                    <div className="container">
+                        <div className="FireJob_brand">
+                            <h2>Fire Projects</h2>
+                            <div className="row ">
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <div className="FireJob_Initiative_desc">
+                                            <img src="images/firegame.png" />
+                                            <span>fire games</span>
+                                            <p>The furnace where games get made. FireGames is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games. FireGames is where gaming seamlessly merges with content creation.</p>
+                                        </div>
+                                        <a href="https://firegames.gg" target="_blank">Learn More</a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <div className="FireJob_Initiative_desc">
+                                            <img src="images/firedata.png" />
+                                            <span>fire data</span>
+                                            <p>The future of all influence. FireData is dedicated to revolutionizing the creator economy industry. Our mission is clear: to establish industry-standard practices through advanced analytics and insights, dismantling inefficiencies and gatekeepers, including agencies. We are fervently committed to promoting transparency and facilitating access to cutting-edge SaaS solutions. We are igniting a new era of empowerment and innovation within the creator economy.</p>
+                                        </div>
+                                        <a href="https://firedata.gg" target="_blank">Learn More</a>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 mb-5">
+                                    <div className="FireJob_Initiative">
+                                        <div className="FireJob_Initiative_desc">
+                                            <img src="images/firemerch.png" />
+                                            <span>fire merch</span>
+                                            <p>Where style ignites. FireMerch represents our commitment to creativity, style, and quality that has fueled our growth and transformation! With a fusion of nostalgia and innovation, our designs not only tell a story, but also ensure the comfort and satisfaction of our valued community.</p>
+                                        </div>
+                                        <a href="https://firemerch.com" target="_blank">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
