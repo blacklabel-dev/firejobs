@@ -5,8 +5,6 @@ import { callGetApi } from "../utils/api/api"
 import { Teams } from "../utils/var/teams"
 import { Modal } from "antd"
 import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const options = {
     autoplay:true,
