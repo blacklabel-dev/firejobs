@@ -970,6 +970,14 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      opacity: 0.7;
      font-weight: 400;
      font-size: 16px;
+ }
+
+ .FireJob_Trailblazers p.bio_desc {
+     line-height: 22px;
+     color: #FFFFFF;
+     opacity: 0.7;
+     font-weight: 400;
+     font-size: 16px;
      display: -webkit-box;
      -webkit-line-clamp: 3;
      -webkit-box-orient: vertical;
@@ -2106,6 +2114,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
    .FireJob_Trailblazers p {
        text-align: center;
+   }
+
+   .FireJob_Trailblazers p.bio_desc {
+    text-align: left;
    }
 
    .FireJob_brand {

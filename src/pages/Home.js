@@ -205,7 +205,7 @@ export default function Home() {
                                                     {/* <h5>{el.role}</h5> */}
                                                     {/* <h4>Years of Service:<span>{el.years_of_service}</span></h4> */}
                                                     <h5>What excites you?</h5>
-                                                    <p>{el.a1}</p>
+                                                    <p className="bio_desc">{el.a1}</p>
                                                     <button onClick={() => setSelectedBio(el)}>Read More</button>
                                                 </div>
                                             </div>
