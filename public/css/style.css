@@ -617,6 +617,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
     color: #ffffff;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    min-width: 150px;
  }
 
  .FireJob_video h2 {
