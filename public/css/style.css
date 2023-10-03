@@ -691,6 +691,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
  .FireJob_Initiative img {
     width: 60px;
+    height: 60px;
     margin-bottom: 30px;
  }
 
@@ -1523,6 +1524,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  @media (min-width: 1400px) {
     .FireJob_Initiative img {
         width: 80px;
+        height: 80px;
     }
  }
 

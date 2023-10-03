@@ -122,12 +122,12 @@ export default function Home() {
             </div>
 
             <div className="FireJob_body">
-                <div className="FireJob_video" id="whoare" name="whoare">
+                <div className="FireJob_video" id="whoare">
                     <div className="container">
                         <div className="row align-items-center mb-5">
                             <div className="col-md-6">
                                 <div className="FireJob_video_box">
-                                    <img src="images/who_we_are.png" />
+                                    <img src="images/2nd-img.jpg" />
                                 </div>
                             </div>
                             <div className="col-md-6">
@@ -139,7 +139,7 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-6 order-md-2">
                                 <div className="FireJob_video_box">
-                                    <img src="images/2nd-img.jpg" />
+                                    <img src="images/who_we_are.png" />
                                 </div>
                             </div>
                             <div className="col-md-6 order-md-1">
@@ -150,7 +150,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Positions" id="sPositions" name="sPositions">
+                <div className="FireJob_Positions" id="sPositions">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Open Positions</h2>
@@ -184,7 +184,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Trailblazers" id="Trailblazers" name="Trailblazers">
+                <div className="FireJob_Trailblazers" id="Trailblazers">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-3">
@@ -217,7 +217,7 @@ export default function Home() {
                     </div>
                 </div>
                 
-                <div className="FireJob_star" id="FireProjects" name="FireProjects">
+                <div className="FireJob_star" id="FireProjects">
                     <div className="container">
                         <div className="FireJob_brand">
                             <h2>Fire Projects</h2>
@@ -225,11 +225,11 @@ export default function Home() {
                                 <div className="col-lg-4 mb-5">
                                     <div className="FireJob_Initiative">
                                         <div className="FireJob_Initiative_desc">
-                                            <img src="images/firegame.png" />
-                                            <span>fire games</span>
-                                            <p>The furnace where games get made. FireGames is focused on crafting exceptional gaming experiences tailored for the creator economy niche. Including Roblox and Minecraft Marketplaces, we specialize in developing immersive RPG and adventure-style games. FireGames is where gaming seamlessly merges with content creation.</p>
+                                            <img src="images/Fire-Games.png" />
+                                            <span>brand partnerships</span>
+                                            <p>In the heart of the creator economy, TBNR specializes in taking the entire creative process, from conception and production to meticulous editing, campaign execution, and comprehensive reporting, thus relieving our brand partners of the heavy lift. We thrive on nurturing connections within our Fire Nation community and fostering genuine partnerships with the brands we collaborate with.</p>
                                         </div>
-                                        <a href="https://firegames.gg" target="_blank">Learn More</a>
+                                        <a href="/brand-partnerships">Learn More</a>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 mb-5">
@@ -257,7 +257,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Perks" id="FireJob_Perks" name="FireJob_Perks">
+                <div className="FireJob_Perks" id="FireJob_Perks">
                     <div className="container">
                         <div className="FireJob_Open">
                             <h2>Fire Perks</h2>
@@ -324,7 +324,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="FireJob_Pillars_section" id="Firejob_Pillars" name="Firejob_Pillars">
+                <div className="FireJob_Pillars_section" id="Firejob_Pillars">
                     <div className="container">
                         <h2>Fire Pillars are the foundation of everything created here - including careers.</h2>
                         <h3>Fire Pillars</h3>

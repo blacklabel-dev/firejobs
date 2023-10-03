@@ -16,22 +16,22 @@ export default function Header() {
                     <div className={`collapse navbar-collapse ${location.pathname.indexOf("/brand-partnerships") >= 0 ? "location-brand-partnerships" : ""} `} id="collapsibleNavbar">
                         <ul className="navbar-nav  ml-auto   mt-lg-0 nav-rot">
                             <li className="nav-item active">
-                                <HashLink className="nav-link" to="/#whoare" smooth>Who We Are</HashLink>
+                                <HashLink className="nav-link" to="/#whoare">Who We Are</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link brand-partnership-nav" to="/brand-partnerships" name="BrandStats" smooth>Brand Partnerships</HashLink>
+                                <HashLink className="nav-link brand-partnership-nav" to="/brand-partnerships">Brand Partnerships</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#sPositions" name="sPositions">Open Positions</HashLink>
+                                <HashLink className="nav-link" to="/#sPositions">Open Positions</HashLink>
                             </li>
                             <li className="nav-item">
-                                <HashLink className="nav-link" to="/#Trailblazers" name="Trailblazers">Trailblazers</HashLink>
+                                <HashLink className="nav-link" to="/#Trailblazers">Trailblazers</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#FireProjects" name="FireProjects" smooth>Fire Projects</HashLink>
+                                <HashLink className="nav-link" to="/#FireProjects">Fire Projects</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#FireJob_Perks" name="FireJob_Perks">Perks</HashLink>
+                                <HashLink className="nav-link" to="/#FireJob_Perks">Perks</HashLink>
                             </li>
                         </ul>
                     </div>
