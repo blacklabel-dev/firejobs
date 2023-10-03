@@ -19,19 +19,19 @@ export default function Header() {
                                 <HashLink className="nav-link" to="/#whoare" smooth>Who We Are</HashLink>
                             </li>
                             <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#BrandStats" name="BrandStats" smooth>Brand Initiatives</HashLink>
+                                <HashLink className="nav-link" to="/brand-integrations" name="BrandStats" smooth>Brand Partnerships</HashLink>
                             </li>
                             <li className="nav-item ">
                                 <HashLink className="nav-link" to="/#sPositions" name="sPositions">Open Positions</HashLink>
+                            </li>
+                            <li className="nav-item ">
+                                <HashLink className="nav-link" to="/#FireProjects" name="BrandStats" smooth>Fire Projects</HashLink>
                             </li>
                             <li className="nav-item">
                                 <HashLink className="nav-link" to="/#Trailblazers" name="Trailblazers">Trailblazers</HashLink>
                             </li>
                             <li className="nav-item ">
                                 <HashLink className="nav-link" to="/#FireJob_Perks" name="FireJob_Perks">Perks</HashLink>
-                            </li>
-                            <li className="nav-item ">
-                                <HashLink className="nav-link" to="/#Firejob_Pillars" name="Firejob_Pillars">Pillars</HashLink>
                             </li>
                         </ul>
                     </div>

@@ -43,7 +43,7 @@ export default function Footer() {
                             <h3>ABOUT TBNR</h3>
                             <ul>
                                 <li><HashLink to="/#whoare">Who We Are</HashLink></li>
-                                <li><HashLink to="/#BrandStats">Brand Initiatives</HashLink></li>
+                                <li><HashLink to="/#FireProjects">Fire Projects</HashLink></li>
                                 <li><a href="/brand-integrations">Brand Integrations</a></li>
                             </ul>
                         </div>

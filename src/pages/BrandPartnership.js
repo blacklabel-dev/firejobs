@@ -133,6 +133,10 @@ export default function BrandPartnership() {
                         <div className="row">
                             <h1>OUR PARTNERS</h1>
                             <div className="our-partners-icons">
+                                <img src="images/zuru.png" />
+                                <img src="images/gamestop.png" />
+                                <img src="images/2k_drive.png" />
+                                <img src="images/google_play.png" />
                                 <img src="images/p1.png" />
                                 <img src="images/p2.png" />
                                 <img src="images/p3.png" />
