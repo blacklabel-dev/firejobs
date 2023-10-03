@@ -123,6 +123,12 @@ font-family: 'x-heightingregular';
     opacity: 1;
  }
 
+ header .location-brand-partnerships .navbar-nav li a.brand-partnership-nav {
+    border-bottom: 4px solid #F34535;
+    color: #fff;
+    opacity: 1;
+ }
+
  header .navbar-nav li strong {
      color: #5FF177;
  }
@@ -661,7 +667,26 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
+ }
+
+ .FireJob_Initiative .FireJob_Initiative_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ .FireJob_Initiative a {
+    background: #F34535;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'x-heightingregular';
+    margin-top: 20px;
+    text-decoration: none;
  }
 
  .FireJob_Initiative img {
@@ -872,7 +897,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_Perks {
-     padding: 100px 0 0;
+     padding: 0;
      background: url(../images/right2.png);
      background-size: 500px;
      background-position: top right;
@@ -925,7 +950,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
  }
 
  .FireJob_Trailblazers {
-     padding: 50px 0 0;
+     padding: 100px 0 0;
  }
 
  .FireJob_Trailblazers h2 {
@@ -1798,6 +1823,26 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      .FireJobs_our_partners .our-partners-icons {
         flex-wrap: wrap;
     }
+
+    .FireJob_Positions {
+        margin-top: 50px;
+    }
+
+    .FireJob_Trailblazers {
+        padding-top: 50px;
+    }
+
+    .FireJob_Trailblazers h2 {
+        text-align: center;
+    }
+
+    .FireJob_Trailblazers p {
+        text-align: center;
+    }
+
+    .FireJob_brand {
+        margin-bottom: 0;
+    }
  }
 
  @media(min-width:200px) and (max-width:767px) {
@@ -2043,6 +2088,26 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
 
     .FireJobs_our_partners .our-partners-icons {
        flex-wrap: wrap;
+   }
+
+   .FireJob_Positions {
+       margin-top: 50px;
+   }
+
+   .FireJob_Trailblazers {
+       padding-top: 50px;
+   }
+
+   .FireJob_Trailblazers h2 {
+       text-align: center;
+   }
+
+   .FireJob_Trailblazers p {
+       text-align: center;
+   }
+
+   .FireJob_brand {
+       margin-bottom: 0;
    }
  }
 

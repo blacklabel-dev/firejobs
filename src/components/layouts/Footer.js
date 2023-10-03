@@ -44,7 +44,7 @@ export default function Footer() {
                             <ul>
                                 <li><HashLink to="/#whoare">Who We Are</HashLink></li>
                                 <li><HashLink to="/#FireProjects">Fire Projects</HashLink></li>
-                                <li><a href="/brand-integrations">Brand Integrations</a></li>
+                                <li><a href="/brand-partnerships">Brand Partnerships</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://staging.firejobs.gg/static/css/main.7c5fca8a.css",
-    "main.js": "https://staging.firejobs.gg/static/js/main.463010ae.js",
+    "main.js": "https://staging.firejobs.gg/static/js/main.c52c56c5.js",
     "static/js/787.26c767c0.chunk.js": "https://staging.firejobs.gg/static/js/787.26c767c0.chunk.js",
     "index.html": "https://staging.firejobs.gg/index.html",
     "main.7c5fca8a.css.map": "https://staging.firejobs.gg/static/css/main.7c5fca8a.css.map",
-    "main.463010ae.js.map": "https://staging.firejobs.gg/static/js/main.463010ae.js.map",
+    "main.c52c56c5.js.map": "https://staging.firejobs.gg/static/js/main.c52c56c5.js.map",
     "787.26c767c0.chunk.js.map": "https://staging.firejobs.gg/static/js/787.26c767c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c5fca8a.css",
-    "static/js/main.463010ae.js"
+    "static/js/main.c52c56c5.js"
   ]
 }
