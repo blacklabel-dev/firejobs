@@ -149,6 +149,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
                 <div className="FireJob_Positions" id="sPositions" name="sPositions">
                     <div className="container">
                         <div className="FireJob_Open">
@@ -215,6 +216,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                
                 <div className="FireJob_star" id="FireProjects" name="FireProjects">
                     <div className="container">
                         <div className="FireJob_brand">
