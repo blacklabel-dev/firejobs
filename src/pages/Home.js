@@ -340,6 +340,7 @@ export default function Home() {
                                             <li>Quality Work &gt; Time Spent</li>
                                             <li>Seek Criticism & Radical Candor</li>
                                         </ul>
+                                        <p>Romans 12:2</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
@@ -351,6 +352,7 @@ export default function Home() {
                                             <li>Have Fun, Be Weird</li>
                                             <li>Listen With Empathy</li>
                                         </ul>
+                                        <p>Hebrews 10:24</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
@@ -362,6 +364,7 @@ export default function Home() {
                                             <li>Be Bold & Pursue Growth</li>
                                             <li>Spark Change Within Yourself & The Company</li>
                                         </ul>
+                                        <p>2 Chronicles 15:7</p>
                                     </div>
                                 </div>
                             </div>

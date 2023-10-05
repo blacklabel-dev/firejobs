@@ -889,6 +889,12 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      margin-bottom: 15px;
  }
 
+ .FireJob_Great p {
+    color: #f43c2c;
+    font-size: 18px;
+    margin-bottom: 15px;
+ }
+
  .FireJob_Great ul li {
      font-weight: 400;
      font-size: 16px;
