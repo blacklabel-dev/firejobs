@@ -893,6 +893,8 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
     color: #f43c2c;
     font-size: 18px;
     margin-bottom: 15px;
+    font-style: italic;
+    font-weight: 700;
  }
 
  .FireJob_Great ul li {
