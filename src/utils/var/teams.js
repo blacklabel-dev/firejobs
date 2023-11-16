@@ -96,19 +96,5 @@ export const Teams = [
         a2: "I'm passionate about film production and all the ways in which it's made. I love how you can manipulate film with music, editing, lighting, etc to create any kind of feeling to the viewer. You can influence and impact people, and I want to be apart of that.",
         a3: "I started at TBNR as a contracted PA in the summer while I was home from college. The company had such an impact on me that I came back to work full time after I graduated a year later. Now, I've just moved up to Associate Producer and I am proud of all the work and experiences I've gotten throughout my time here. I am happy to start learning even more in my new position and to help grow this company further.",
         favorite_pizza_topping: "Detroit Style-Pizza"
-    },
-    {
-        id: "8",
-        name: "Omar Parker",
-        image: "images/Omar.jpg",
-        years_of_service: "1 year",
-        super_power: "",
-        trophy: "",
-        role: "Post Production Manager",
-        start_date: "2/7/2022",
-        a1: "Making content that I can be proud of. It's really fun to create something that your proud and excited to show family and friends.",
-        a2: "Always pushing further and leveling up each production. How can we make this next video even better than the last one we did. How can we push our limits!",
-        a3: "Seeing the positive impact we make around us. From charitable donations to interacting with fans at meet and greets and seeing how much fun they have with our content, it really feels like you are a part of something special.",
-        favorite_pizza_topping: "Detroit Style-Pizza"
     }
 ]
