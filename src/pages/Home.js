@@ -150,11 +150,12 @@ export default function Home() {
                         <div className="row align-items-center">
                             <div className="col-md-6">
                                 <div className="FireJob_video_box">
-                                    <img src="images/builtin-img.png" />
+                                    <img src="images/builtin-img.png" className="built-in-img" />
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <p>TBNR is honored to be recognized by BuiltIn as one of the best places and best startups to work for in Dallas, TX. Our commitment to fostering an environment of honest and constructive feedback and pushing ourselves to new heights has played a pivotal role in shaping our workplace culture. At TBNR, we believe in challenging each other to bring out the best in ourselves and each other, creating a workplace where innovation and creativity thrive. This achievement is a testament to the incredible team we have at TBNR who have played a crucial role in making TBNR a standout workplace in Dallas!</p>
+                                <p>TBNR is honored to be recognized by BuiltIn as one of the best places and best startups to work for in Dallas, TX. Our commitment to fostering an environment of honest and constructive feedback and pushing ourselves to new heights has played a pivotal role in shaping our workplace culture.</p>
+                                <p>At TBNR, we believe in challenging each other to bring out the best in ourselves and each other, creating a workplace where innovation and creativity thrive. This achievement is a testament to the incredible team we have at TBNR who have played a crucial role in making TBNR a standout workplace in Dallas!</p>
                             </div>
                         </div>
                     </div>

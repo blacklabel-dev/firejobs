@@ -569,6 +569,10 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
      border-radius: 15px;
  }
 
+ .FireJob_video_box .built-in-img {
+    max-width: 450px;
+ }
+
  .FireJob_video {
      position: relative;
  }
