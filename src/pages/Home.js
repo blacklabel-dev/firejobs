@@ -136,7 +136,7 @@ export default function Home() {
                                 <p>We at TBNR are a group of skilled <b>CREATORS</b> coming from a variety of backgrounds including content creation, music, theater, coding, architectural design, movie and television set construction, tech and VC startups, professional gaming, video game development, and beyond! </p>
                             </div>
                         </div>
-                        <div className="row align-items-center">
+                        <div className="row align-items-center mb-5">
                             <div className="col-md-6 order-md-2">
                                 <div className="FireJob_video_box">
                                     <img src="images/who_we_are.png" />
@@ -145,6 +145,17 @@ export default function Home() {
                             <div className="col-md-6 order-md-1">
                                 <p>We believe in <b>RADICAL CANDOR</b> which means honest and constructive feedback towards ourselves and others, even if it might be uncomfortable or critical. We foster an environment where open and honest feedback is not only accepted, but encouraged for our employees and leadership to achieve their highest potential. We believe challenging each other is the only way to be the <b>BEST</b>. </p>
                                 <p>TBNR has an innate desire to spread positive messaging and cares deeply about the kind of content and products that we popularize with our videos, merchandise, and game development. We are seeking passionate <b>CREATORS</b> with a love for human collaboration through supportive competition to join us in the <b>FIRE</b> movement revolution - we will not <b>REST</b> in our efforts to push the needle of humanity forward in a meaningfully, positive direction!</p>
+                            </div>
+                        </div>
+                        <div className="row align-items-center">
+                            <div className="col-md-6">
+                                <div className="FireJob_video_box">
+                                    <img src="images/builtin-img.png" className="built-in-img" />
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <p>TBNR is honored to be recognized by BuiltIn as one of the best places and best startups to work for in Dallas, TX. Our commitment to fostering an environment of honest and constructive feedback and pushing ourselves to new heights has played a pivotal role in shaping our workplace culture.</p>
+                                <p>At TBNR, we believe in challenging each other to bring out the best in ourselves and each other, creating a workplace where innovation and creativity thrive. This achievement is a testament to the incredible team we have at TBNR who have played a crucial role in making TBNR a standout workplace in Dallas!</p>
                             </div>
                         </div>
                     </div>
