@@ -29,20 +29,6 @@ export const Teams = [
     },
     {
         id: "3",
-        name: "Panos Tsaklas",
-        image: "images/Panos.jpg",
-        years_of_service: "1 year",
-        super_power: "",
-        trophy: "",
-        role: "Assistant Videographer",
-        start_date: "5/16/2022",
-        a1: "Creative people! I'm always astounded by the things individuals can come up with, and even more astounded by the creativity that the convergence of multiple personalities can produce.",
-        a2: "I'm passionate about art. About creativity. About connecting with people and getting to know them on a human level. I'm passionate about Youtube. I'm just generally passionate about life and the wonderful range of experiences it has to offer.",
-        a3: "I'm most proud of the genuine connections I've been able to form with the people I have the pleasure to work with each day.",
-        favorite_pizza_topping: "Banana Peppers"
-    },
-    {
-        id: "4",
         name: "Ryne 'R2' Clem",
         image: "images/Ryne.jpg",
         years_of_service: "2 years",
@@ -56,7 +42,7 @@ export const Teams = [
         favorite_pizza_topping: "Pepperoni"
     },
     {
-        id: "5",
+        id: "4",
         name: "Joshua 'JT' Thompson",
         image: "images/Joshua.jpg",
         years_of_service: "3 years",
@@ -70,7 +56,7 @@ export const Teams = [
         favorite_pizza_topping: "Supreme"
     },
     {
-        id: "6",
+        id: "5",
         name: "Jordan Hull",
         image: "images/Jordan.jpg",
         years_of_service: "6 years",
@@ -84,7 +70,7 @@ export const Teams = [
         favorite_pizza_topping: "Jalapenos"
     },
     {
-        id: "7",
+        id: "6",
         name: "Chloe Morris",
         image: "images/Chloe.jpg",
         years_of_service: "1 year",
